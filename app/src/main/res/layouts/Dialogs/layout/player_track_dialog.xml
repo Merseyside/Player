@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dialog_width_size"
+    android:layout_height="wrap_content"
+    android:background="?attr/theme_dependent_dialog_color">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:id="@+id/delete_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/delete"
+                android:src="@drawable/clear_cross"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/to_playlist_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/delete_layout"
+            android:layout_toRightOf="@+id/delete_layout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/in_to_playlist"
+                android:src="@drawable/note"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:background="@null"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_add_to_playlist"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/to_playlist_layout"
+            android:layout_toRightOf="@+id/to_playlist_layout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:id="@+id/info1"
+                android:layout_marginTop="@dimen/very_small_margin"
+                android:src="@drawable/info"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_info"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_below="@+id/delete_layout"
+            android:layout_alignParentLeft="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/cd_share"
+                android:src="@drawable/nav_share"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/share"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/megamix_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_below="@+id/to_playlist_layout"
+            android:layout_toRightOf="@id/share_layout"
+            android:layout_toEndOf="@+id/share_layout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/cd_megamix"
+                android:src="@drawable/wave"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/megamix"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_below="@+id/info_layout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/cd_comment"
+                android:src="@drawable/comment"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment_dialog"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/more_layout"
+            android:layout_below="@+id/share_layout">
+
+            <RelativeLayout
+                android:id="@+id/similar_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_similar"
+                    android:src="@drawable/similar"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/find_similar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/love_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/similar_layout"
+                android:layout_toEndOf="@+id/similar_layout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_love"
+                    android:src="@drawable/love"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/love"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/artists_tracks_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/love_layout"
+                android:layout_toEndOf="@+id/love_layout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_artists_tracks"
+                    android:src="@drawable/artists_tracks"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/artists_tracks"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

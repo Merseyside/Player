@@ -1,0 +1,18 @@
+<defaultsMap>
+    <entry>
+        <key>videoTag</key>
+        <value>null</value>
+    </entry>
+    <entry>
+        <key>videoURL</key>
+        <value>null</value>
+    </entry>
+    <entry>
+        <key>videoTitle</key>
+        <value>null</value>
+    </entry>
+    <entry>
+        <key>version</key>
+        <value>0.8.2.1</value>
+    </entry>
+</defaultsMap>

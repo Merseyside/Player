@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.merseyside.admin.player.ActivitesAndFragments.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/theme_dependent_windowBackground">
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/small_margin"
+        android:id="@+id/action_bar">
+
+        <ImageButton
+            android:id="@+id/drawer_toggle"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/drawer_toogle"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/action_player"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:src="@drawable/player_icon"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageButton
+            android:id="@+id/action_equalizer"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/action_player"
+            android:layout_toStartOf="@+id/action_player"
+            android:src="@drawable/equalizer_icon"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+
+        <CheckBox
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:background="@drawable/megamix_cb"
+            android:button="@null"
+            android:id="@+id/action_megamix"
+            android:checked="false"
+            android:layout_toLeftOf="@+id/action_equalizer"
+            android:layout_toStartOf="@+id/action_equalizer"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
+
+        <ImageButton
+            android:id="@+id/action_order"
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_toLeftOf="@+id/action_megamix"
+            android:layout_toStartOf="@+id/action_megamix"
+            android:src="@drawable/order_list"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin" />
+    </RelativeLayout>
+</RelativeLayout>

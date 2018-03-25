@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.merseyside.admin.player.Utilities.SeekBarPreference">
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekCircle">
+        <attr name="min" format="integer" value="0" />
+        <attr name="max" format="integer" value="100" />
+        <attr name="progress" format="integer" value="0" />
+        <attr name="startColor" format="color" />
+        <attr name="endColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="ringBias" format="float" />
+        <attr name="sectionRatio" format="float" />
+    </declare-styleable>
+
+    <attr name="theme_dependent_order_color" format="reference"/>
+    <attr name="theme_dependent_tint_color" format="reference"/>
+    <attr name="theme_dependent_accent_color" format="reference"/>
+    <attr name="theme_dependent_dialog_color" format="reference"/>
+    <attr name="theme_dependent_color" format="reference"/>
+    <attr name="theme_dependent_windowBackground" format="reference" />
+    <attr name="theme_dependent_text_color" format="reference"/>
+    <attr name="theme_dependent_header_gradient" format="reference"/>
+    <attr name="theme_dependent_progress_bar_style" format="reference"/>
+    <attr name="theme_dependent_equalizer_band_style" format="reference"/>
+    <attr name="theme_dependent_folder_icon" format="reference"/>
+    <attr name="theme_dependent_track_cover" format="reference"/>
+    <attr name="theme_dependent_notification" format="reference"/>
+    <attr name="theme_dependent_item_background" format="reference"/>
+    <attr name="theme_dependent_playlist_cover" format="reference"/>
+
+</resources>

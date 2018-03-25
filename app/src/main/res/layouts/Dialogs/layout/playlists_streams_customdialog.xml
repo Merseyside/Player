@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dialog_width_size"
+    android:layout_height="wrap_content"
+    android:background="?attr/theme_dependent_dialog_color">
+
+    <RelativeLayout
+        android:id="@+id/main_options"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:id="@+id/edit_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true">
+            <ImageButton
+                android:layout_width="@dimen/medium_icon_size"
+                android:layout_height="@dimen/medium_icon_size"
+                android:id="@+id/cd_edit"
+                android:src="@drawable/edit"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_edit"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/play_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/edit_layout"
+            android:layout_toEndOf="@+id/edit_layout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cd_play"
+                android:src="@drawable/play_dialog"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_play"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="@dimen/dialog_cell_width_size"
+            android:layout_height="@dimen/dialog_cell_height_size"
+            android:orientation="vertical"
+            android:layout_toEndOf="@+id/play_layout"
+            android:layout_toRightOf="@+id/play_layout">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/cd_delete"
+                android:src="@drawable/clear_cross"
+                android:scaleType="fitCenter"
+                android:maxHeight="@dimen/medium_icon_size"
+                android:maxWidth="@dimen/medium_icon_size"
+                android:adjustViewBounds="true"
+                android:layout_centerHorizontal="true"
+                android:tint="?attr/theme_dependent_tint_color"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_delete"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/additional_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_options">
+
+            <RelativeLayout
+                android:id="@+id/order_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_order"
+                    android:src="@drawable/order"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dialog_inOrder"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/megamix_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/order_layout"
+                android:layout_toEndOf="@+id/order_layout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_megamix"
+                    android:src="@drawable/wave"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/megamix"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="@dimen/dialog_cell_width_size"
+                android:layout_height="@dimen/dialog_cell_height_size"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/megamix_layout"
+                android:layout_toEndOf="@+id/megamix_layout">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/cd_refresh"
+                    android:src="@drawable/refresh"
+                    android:scaleType="fitCenter"
+                    android:maxHeight="@dimen/medium_icon_size"
+                    android:maxWidth="@dimen/medium_icon_size"
+                    android:adjustViewBounds="true"
+                    android:layout_centerHorizontal="true"
+                    android:tint="?attr/theme_dependent_tint_color"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refresh_folder"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/text_size"
+                    android:maxLines="1"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+

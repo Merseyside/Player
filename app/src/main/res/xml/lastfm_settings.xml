@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/lastfm_options"
+        android:entryValues="@array/lastfm_options_entry_values"
+        android:key="lastfm_start"
+        android:summary="@string/summary_start_category_lastfm"
+        android:title="@string/title_start_category_lastfm"
+        android:defaultValue="0">
+    </ListPreference>
+
+    <CheckBoxPreference
+        android:key="scrobble_lastfm"
+        android:summary="@string/summary_scrobble_lastfm"
+        android:title="@string/title_scrobble_lastfm"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="now_playing_lastfm"
+        android:summary="@string/summary_now_playing_lastfm"
+        android:title="@string/title_now_playing_lastfm"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="wifi"
+        android:summary="@string/summary_wifi"
+        android:title="@string/title_wifi"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+</PreferenceScreen>

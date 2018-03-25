@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/lib/com.merseyside.admin.player.Utilities">
+    <CheckBoxPreference
+    android:key="silence"
+    android:summary="@string/summary_silence"
+    android:title="@string/title_silence"
+    android:defaultValue="false">
+</CheckBoxPreference>
+
+    <com.merseyside.admin.player.Utilities.SeekBarPreference
+        android:key="crossfade"
+        android:title="@string/title_crossfade"
+        android:summary="@string/summary_crossfade"
+        android:persistent="true"
+        android:defaultValue="0"
+        example:minValue="0"
+        example:maxValue="15000">
+    </com.merseyside.admin.player.Utilities.SeekBarPreference>
+
+    <CheckBoxPreference
+        android:key="audiofocus"
+        android:summary="@string/summary_audiofocus"
+        android:title="@string/title_audiofocus"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="fading"
+        android:summary="@string/summary_fading"
+        android:title="@string/title_fading"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+</PreferenceScreen>

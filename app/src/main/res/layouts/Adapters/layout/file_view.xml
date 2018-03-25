@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@color/opacity_grey">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/FAA_frame_layout"
+        android:layout_width="@dimen/file_view_image"
+        android:layout_height="@dimen/file_view_image">
+
+    <ImageView
+        android:id="@+id/FAA_fd_Icon1"
+        android:layout_width="@dimen/file_view_image"
+        android:layout_height="@dimen/file_view_image" >
+    </ImageView>
+
+    <CheckBox
+        android:theme="@style/checkBoxStyle"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FAA_checkBox"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_gravity="center_horizontal"
+        android:checked="false" />
+    </FrameLayout>
+
+    <TextView android:text="@+id/FAA_TextView01"
+        android:id="@+id/FAA_TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/FAA_frame_layout"
+        android:layout_toEndOf="@+id/FAA_frame_layout"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white">
+    </TextView>
+    <TextView android:text="@+id/FAA_TextView02"
+        android:id="@+id/FAA_TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/FAA_frame_layout"
+        android:layout_toEndOf="@+id/FAA_frame_layout"
+        android:layout_below="@+id/FAA_TextView01"
+        android:layout_marginLeft="@dimen/buttons_margin_horizontal"
+        android:layout_marginStart="@dimen/buttons_margin_horizontal"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white">
+
+    </TextView>
+    <TextView android:text="@+id/FAA_TextViewDate"
+        android:id="@+id/FAA_TextViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FAA_TextView01"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white">
+    </TextView>
+</RelativeLayout>

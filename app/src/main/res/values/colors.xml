@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark_Blue">@color/black</color>
+    <color name="colorAccent_Dark_Blue">@color/blue</color>
+    <color name="windowBackground_Dark_Blue">@color/black</color>
+    <color name="dialogBackground_Dark_Blue">@color/background_blue</color>
+    <color name="opacityDark_Blue">@color/opacity_blue_order</color>
+    <color name="textColor_Dark_Blue">@color/white</color>
+
+    <color name="colorPrimary_Dark_Red">@color/black</color>
+    <color name="colorAccent_Dark_Red">@color/red</color>
+    <color name="windowBackground_Dark_Red">@color/black</color>
+    <color name="dialogBackground_Dark_Red">@color/background_red</color>
+    <color name="opacityDark_Red">@color/opacity_red_order</color>
+    <color name="textColor_Dark_Red">@color/white</color>
+
+    <color name="colorPrimary_Dark_Orange">@color/black</color>
+    <color name="colorAccent_Dark_Orange">@color/orange</color>
+    <color name="windowBackground_Dark_Orange">@color/black</color>
+    <color name="dialogBackground_Dark_Orange">@color/background_orange</color>
+    <color name="opacityDark_Orange">@color/opacity_orange_order</color>
+    <color name="textColor_Dark_Orange">@color/white</color>
+
+    <color name="colorPrimary_Dark_Purple">@color/black</color>
+    <color name="colorAccent_Dark_Purple">@color/purple</color>
+    <color name="windowBackground_Dark_Purple">@color/black</color>
+    <color name="dialogBackground_Dark_Purple">@color/background_purple</color>
+    <color name="opacityDark_Purple">@color/opacity_purple_order</color>
+    <color name="textColor_Dark_Purple">@color/white</color>
+
+    <color name="colorPrimary_Teal">@color/black</color>
+    <color name="colorAccent_Teal">@color/teal</color>
+    <color name="windowBackground_Teal">@color/black</color>
+    <color name="dialogBackground_Teal">@color/background_teal</color>
+    <color name="opacity_Teal">@color/opacity_teal_order</color>
+    <color name="textColor_Teal">@color/white</color>
+
+    <color name="colorPrimary_Green">@color/black</color>
+    <color name="colorAccent_Green">@color/green</color>
+    <color name="windowBackground_Green">@color/black</color>
+    <color name="dialogBackground_Green">@color/background_green</color>
+    <color name="opacity_Green">@color/opacity_green_order</color>
+    <color name="textColor_Green">@color/white</color>
+
+
+    <color name="red">#F44336</color>
+    <color name="background_red">#550000</color>
+    <color name="opacity_red">#BFF44336</color>
+    <color name="opacity_red_order">#55550000</color>
+
+    <color name="blue">#2196F3</color>
+    <color name="background_blue">#061539</color>
+    <color name="opacity_blue">#BF2196F3</color>
+    <color name="light_blue">#1377BEF5</color>
+    <color name="opacity_blue_order">#55061539</color>
+
+    <color name="orange">#FF9800</color>
+    <color name="background_orange">#EF6C00</color>
+    <color name="opacity_orange">#BFFF9800</color>
+    <color name="opacity_orange_order">#55EF6C00</color>
+
+    <color name="purple">#9C27B0</color>
+    <color name="background_purple">#6A1B9A</color>
+    <color name="opacity_purple">#BF9C27B0</color>
+    <color name="opacity_purple_order">#556A1B9A</color>
+
+    <color name="teal">#1DE9B6</color>
+    <color name="background_teal">#00BFA5</color>
+    <color name="opacity_teal">#BF1DE9B6</color>
+    <color name="opacity_teal_order">#5500BFA5</color>
+
+    <color name="green">#8BC34A</color>
+    <color name="background_green">#558B2F</color>
+    <color name="opacity_green">#BF8BC34A</color>
+    <color name="opacity_green_order">#55558B2F</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#6c6e6a</color>
+    <color name="light_grey">#c0c2bd</color>
+    <color name="opacity_grey">#33424242</color>
+    <color name="opacity_white">#33FFFFFF</color>
+    <color name="opacity_grey_order">#33747474</color>
+    <color name="opacity_black_order">#A2000000</color>
+    <color name="background_grey">#136c6e6a</color>
+
+
+
+    <color name="waveform_crossfade_selected">#FF7110</color>
+    <color name="waveform_fading_selected">#FF2300</color>
+    <color name="waveform_increase_selected">#ffff66</color>
+    <color name="waveform_transition_selected">#8BC34A</color>
+    <color name="waveform_selected">#33b5e5</color>
+    <color name="waveform_unselected">#195a72</color>
+    <color name="waveform_unselected_bkgnd_overlay">#0a242d</color>
+    <color name="selection_border">#ffffff</color>
+    <color name="playback_indicator">#ffff66</color>
+    <color name="grid_line">#66ffffff</color>
+    <color name="timecode">#ddffffdd</color>
+    <color name="timecode_shadow">#aa000000</color>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_dependent_dialog_color">
+
+    <RelativeLayout
+        android:id="@+id/share_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:tint="?attr/theme_dependent_tint_color"
+            app:srcCompat="@drawable/nav_share"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/share1"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:text="@string/name_and_artist"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_textView1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/share1"
+            android:layout_toEndOf="@+id/share1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/nav_share"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/share2"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:text="@string/audio_file"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_textView2"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/share2"
+            android:layout_toEndOf="@+id/share2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/nav_share"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/share3"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:text="@string/name_and_file"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/share_textView3"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/share3"
+            android:layout_toEndOf="@+id/share3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekcircle="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_size">
+
+        <ImageView
+            android:id="@+id/equalizer_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/theme_dependent_header_gradient">
+        </View>
+
+        <TextView
+            style="@style/shadoweffect"
+            android:id="@+id/equalizer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/equalizer" />
+    </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceValue_1"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/frequenceValue_1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start_1"
+            android:text="@string/minus_db15"
+            android:textSize="@dimen/text_size"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceBar_1"
+            android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+            android:layout_centerVertical="true"
+            android:thumb="@null"
+            android:layout_toRightOf="@+id/start_1"
+            android:layout_toLeftOf="@+id/end_1"
+            android:max="100"
+            android:progress="50" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end_1"
+            android:text="@string/db15"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceValue_2"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/frequenceValue_2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_2"
+                android:text="@string/minus_db15"
+                android:textSize="@dimen/text_size"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frequenceBar_2"
+                android:layout_toRightOf="@+id/start_2"
+                android:layout_toLeftOf="@+id/end_2"
+                android:max="100"
+                android:progress="50"
+                android:thumb="@null"
+                android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_2"
+                android:text="@string/db15"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceValue_3"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/frequenceValue_3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_3"
+                android:text="@string/minus_db15"
+                android:textSize="@dimen/text_size"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frequenceBar_3"
+                android:layout_toRightOf="@+id/start_3"
+                android:layout_toLeftOf="@+id/end_3"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+                android:layout_centerVertical="true"
+                android:thumb="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_3"
+                android:text="@string/db15"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceValue_4"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/frequenceValue_4">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_4"
+                android:text="@string/minus_db15"
+                android:textSize="@dimen/text_size"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frequenceBar_4"
+                android:layout_toRightOf="@+id/start_4"
+                android:layout_toEndOf="@+id/start_4"
+                android:layout_toLeftOf="@+id/end_4"
+                android:layout_toStartOf="@+id/end_4"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+                android:layout_centerVertical="true"
+                android:thumb="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_4"
+                android:text="@string/db15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_size"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frequence_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frequenceValue_5"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/frequenceValue_5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_5"
+                android:text="@string/minus_db15"
+                android:textSize="@dimen/text_size"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frequenceBar_5"
+                android:layout_toRightOf="@+id/start_5"
+                android:layout_toEndOf="@+id/start_5"
+                android:layout_toLeftOf="@+id/end_5"
+                android:layout_toStartOf="@+id/end_5"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+                android:layout_centerVertical="true"
+                android:thumb="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_5"
+                android:text="@string/db15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_size"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/speed_value"
+            android:layout_centerHorizontal="true"
+            android:text="@string/playback_speed"
+            android:textSize="@dimen/text_size"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/speed_value">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playback_speed"
+
+                android:textSize="@dimen/text_size"/>
+
+            <SeekBar
+                style="@style/SeekBarWithoutSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/speed_bar"
+                android:layout_toRightOf="@+id/playback_speed"
+                android:layout_toEndOf="@+id/playback_speed"
+                android:layout_toLeftOf="@+id/kek"
+                android:layout_toStartOf="@+id/kek"
+                android:max="40"
+                android:progress="20"
+                android:progressDrawable="?attr/theme_dependent_equalizer_band_style"
+                android:layout_centerVertical="true"
+                android:thumb="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kek"
+                android:text="@string/db15"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_size"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speed_koef"
+                android:text="x1.0"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/text_size"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/small_margin">
+        <Button
+            android:id="@+id/preset_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preset"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/text_size"
+            android:textAllCaps="true"
+            android:background="@drawable/button_background_selector"
+            android:layout_alignBottom="@+id/enable_cb"
+            android:layout_centerVertical="true"/>
+
+        <CheckBox
+            android:id="@+id/enable_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:text="@string/equalizer"
+            android:textSize="@dimen/text_size"
+            android:button="@color/transparent"
+            android:background="@drawable/checkbox_background_selector"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_btn"
+            android:layout_toLeftOf="@+id/preset_btn"
+            android:layout_toStartOf="@+id/preset_btn"
+            android:text="@string/reset"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:textAllCaps="true"
+            android:textSize="@dimen/text_size"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_background_selector"
+            android:layout_alignBottom="@+id/enable_cb" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/small_margin">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/equalizer_horizontal_margin"
+                android:layout_marginRight="@dimen/equalizer_horizontal_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/bass"
+                    android:id="@+id/bass_textview"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/tiny_margin"
+                    android:textSize="@dimen/text_size_medium"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/bass_textview">
+
+                    <com.merseyside.admin.player.Utilities.SeekCircle
+                        android:id="@+id/bass_boost_circle"
+                        android:layout_width="@dimen/volume_circle_size"
+                        android:layout_height="@dimen/volume_circle_size"
+                        seekcircle:min="0"
+                        seekcircle:max="100"
+                        seekcircle:progress="0"
+                        android:layout_centerHorizontal="true">
+                    </com.merseyside.admin.player.Utilities.SeekCircle>
+
+                    <TextView
+                        android:id="@+id/bass_boost_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_size_large"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/tiny_margin"
+                android:layout_marginLeft="@dimen/equalizer_horizontal_margin"
+                android:layout_marginRight="@dimen/equalizer_horizontal_margin"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/volume"
+                    android:id="@+id/volume_textview"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/tiny_margin"
+                    android:textSize="@dimen/text_size_medium"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/volume_textview">
+                    <com.merseyside.admin.player.Utilities.SeekCircle
+                        android:id="@+id/volume_circle"
+                        android:layout_width="@dimen/volume_circle_size"
+                        android:layout_height="@dimen/volume_circle_size"
+                        android:layout_centerHorizontal="true"
+                        seekcircle:min="0"
+                        seekcircle:max="100"
+                        seekcircle:progress="0">
+                    </com.merseyside.admin.player.Utilities.SeekCircle>
+
+                    <TextView
+                        android:id="@+id/volume_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text_size_large" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

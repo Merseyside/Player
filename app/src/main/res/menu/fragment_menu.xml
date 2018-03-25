@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/menugroup1" >
+        <item
+            android:id="@+id/list_view"
+            android:title="@string/list_view"/>
+        <item
+            android:id="@+id/grid_view"
+            android:title="@string/grid_view"/>
+        <item
+            android:id="@+id/ascending"
+            android:title="@string/sort_ascending"/>
+
+        <item
+            android:id="@+id/descending"
+            android:title="@string/sort_descending"/>
+
+        <item
+            android:id="@+id/refresh"
+            android:title="@string/refresh"/>
+
+    </group>
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/file_chooser_layout">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/file_choose_header_size"
+        android:weightSum="1"
+        android:id="@+id/file_toolbar"
+        android:background="@null">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/multiply_check"
+            android:id="@+id/check_all"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/buttons_margin_horizontal"
+            android:layout_marginStart="@dimen/buttons_margin_horizontal"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear_cross"
+            android:id="@+id/cancel_but"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/buttons_margin_horizontal"
+            android:layout_marginEnd="@dimen/buttons_margin_horizontal"
+            android:layout_toLeftOf="@+id/accept_but"
+            android:layout_toStartOf="@+id/accept_but"
+            android:adjustViewBounds="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:id="@+id/accept_but"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/buttons_margin_horizontal"
+            android:layout_marginEnd="@dimen/buttons_margin_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/up_folder"
+            android:id="@+id/up_but"
+            android:scaleType="fitStart"
+            android:background="@null"
+            android:maxHeight="@dimen/medium_icon_size"
+            android:maxWidth="@dimen/medium_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/buttons_margin_horizontal"
+            android:layout_marginStart="@dimen/buttons_margin_horizontal"
+            android:adjustViewBounds="true"
+            android:layout_toLeftOf="@+id/favourite_cb"
+            android:layout_toStartOf="@+id/favourite_cb"/>
+
+        <CheckBox
+            android:id="@+id/favourite_cb"
+            android:layout_width="@dimen/medium_icon_size"
+            android:layout_height="@dimen/medium_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/favourite_checkbox"
+            android:button="@null"
+            android:layout_marginRight="@dimen/buttons_margin_horizontal"
+            android:layout_marginLeft="@dimen/buttons_margin_horizontal"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/parent_directory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parent_directory"
+            android:layout_marginLeft="@dimen/cover_size"
+            android:layout_marginStart="@dimen/cover_size"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/file_toolbar"
+        android:layout_above="@+id/multi_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/explorer_lv"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:background="@drawable/button_background_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/multi_button" />
+
+</RelativeLayout>

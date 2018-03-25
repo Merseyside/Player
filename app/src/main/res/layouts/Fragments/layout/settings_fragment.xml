@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_size">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/settings_header"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/theme_dependent_header_gradient">
+        </View>
+
+        <TextView
+            style="@style/shadoweffect"
+            android:id="@+id/settings_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/interface_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            android:tint="?attr/theme_dependent_tint_color"
+            app:srcCompat="@drawable/interface_settings"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/interface_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/settings_interface"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/interface_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/interface_imageview"
+            android:layout_toEndOf="@+id/interface_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sound_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/sound"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/sound_imageview"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/settings_sound"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sound_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/sound_imageview"
+            android:layout_toEndOf="@+id/sound_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/headset_bluetooth_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/headset"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/headset_imageview"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/headset_and_bluetooth"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headset_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/headset_imageview"
+            android:layout_toEndOf="@+id/headset_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lastfm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/nav_lastfm"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/lastfm_imageview"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/lastfm"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lastfm_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lastfm_imageview"
+            android:layout_toEndOf="@+id/lastfm_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/megamix_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/wave"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/megamix_imageview"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/megamix"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/megamix_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/megamix_imageview"
+            android:layout_toEndOf="@+id/megamix_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/other"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:id="@+id/other_imageview"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/settings_other"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/other_imageview"
+            android:layout_toEndOf="@+id/other_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

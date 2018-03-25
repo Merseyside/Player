@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_view_layout"
+    android:layout_height="@dimen/grid_height"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/theme_dependent_item_background"
+    android:layout_margin="@dimen/tiny_margin"
+    android:padding="@dimen/tiny_margin">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cover_image"
+        android:maxHeight="@dimen/grid_image_size"
+        android:maxWidth="@dimen/grid_image_size"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/Playlist_songName" />
+
+    <TextView android:text="@+id/Playlist_songName"
+        android:id="@+id/Playlist_songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Playlist_artist"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size">
+    </TextView>
+    <TextView android:text="@+id/Playlist_artist"
+        android:id="@+id/Playlist_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Playlist_Duration"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/white">
+
+    </TextView>
+    <TextView android:text="@+id/Playlist_Duration"
+        android:id="@+id/Playlist_Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="?attr/theme_dependent_accent_color">
+    </TextView>
+
+    <TextView
+        style="@style/shadoweffect"
+        android:id="@+id/Playlist_Megamix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size_medium">
+    </TextView>
+</RelativeLayout>

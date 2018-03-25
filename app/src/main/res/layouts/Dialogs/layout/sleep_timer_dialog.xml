@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_dependent_dialog_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="@dimen/text_size_large"
+        android:text="@string/sleep_timer"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tiny_margin"
+        android:background="?attr/theme_dependent_accent_color"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:layout_marginTop="@dimen/small_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_timer_tw"
+        android:textSize="@dimen/text_size_medium"
+        android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sleep_timer_sb"
+        android:max="59" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:background="@drawable/button_background_selector"
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:minHeight="@dimen/normal_icon_size"
+            android:minWidth="@dimen/normal_icon_size"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="@drawable/button_background_selector"
+            android:textSize="@dimen/text_size"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:minHeight="@dimen/normal_icon_size"
+            android:minWidth="@dimen/normal_icon_size"/>
+    </LinearLayout>
+
+</LinearLayout>

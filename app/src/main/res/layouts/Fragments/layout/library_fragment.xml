@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_size">
+
+        <ImageView
+            android:id="@+id/library_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/theme_dependent_header_gradient">
+        </View>
+
+        <TextView
+            style="@style/shadoweffect"
+            android:id="@+id/library_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/custom_font_size"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/action_library" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_tracks_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/note"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/alltracks_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/all_tracks"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alltracks_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/alltracks_imageview"
+            android:layout_toEndOf="@+id/alltracks_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rated_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/star_empty"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/rated_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/rated"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rated_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rated_imageview"
+            android:layout_toEndOf="@+id/rated_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/megamix_tracks_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/wave"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/megamix_tracks_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/megamix_tracks"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/megamix_tracks_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/megamix_tracks_imageview"
+            android:layout_toEndOf="@+id/megamix_tracks_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/commented_tracks_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/comment"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/commented_tracks_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="@string/commented_tracks"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commented_tracks_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/commented_tracks_imageview"
+            android:layout_toEndOf="@+id/commented_tracks_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recently_added_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="@dimen/normal_icon_size"
+            android:layout_height="@dimen/normal_icon_size"
+            app:srcCompat="@drawable/clock"
+            android:maxWidth="@dimen/normal_icon_size"
+            android:maxHeight="@dimen/normal_icon_size"
+            android:id="@+id/recently_added_imageview"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="?attr/theme_dependent_tint_color"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:text="@string/recently_added"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recently_added_textView"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/recently_added_imageview"
+            android:layout_toEndOf="@+id/recently_added_imageview"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

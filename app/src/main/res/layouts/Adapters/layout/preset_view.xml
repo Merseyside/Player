@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/preset_view_size"
+    android:background="@null">
+    <ImageView
+        android:layout_width="@dimen/preset_view_size"
+        android:layout_marginTop="@dimen/very_small_margin"
+        android:layout_marginBottom="@dimen/very_small_margin"
+        android:layout_height="match_parent"
+        android:src="@drawable/clef"
+        android:maxHeight="@dimen/preset_view_size"
+        android:maxWidth="@dimen/preset_view_size"
+        android:adjustViewBounds="true"
+        android:id="@+id/image"
+        android:tint="?attr/theme_dependent_tint_color"/>
+
+    <TextView
+        android:id="@+id/preset_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/preset"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_toEndOf="@+id/image"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

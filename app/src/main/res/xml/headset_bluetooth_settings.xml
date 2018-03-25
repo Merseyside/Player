@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="headset_pause"
+        android:summary="@string/summary_pause_headset"
+        android:title="@string/title_pause_headset"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="start_headset"
+        android:summary="@string/summary_start_headset"
+        android:title="@string/title_start_headset"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="start_bluetooth"
+        android:summary="@string/summary_start_bluetooth"
+        android:title="@string/title_start_bluetooth"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="process_pressing"
+        android:summary="@string/summary_process_pressing"
+        android:title="@string/title_process_pressing"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+</PreferenceScreen>

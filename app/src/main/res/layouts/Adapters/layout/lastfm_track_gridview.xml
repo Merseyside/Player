@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/opacity_grey"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/lastfm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@+id/lastfm_cover"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/lastfm_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@+id/lastfm_title"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/lastfm_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@+id/lastfm_artist"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/lastfm_cover"
+        android:layout_width="@dimen/grid_image_size"
+        android:layout_height="@dimen/grid_image_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+    </ImageView>
+
+</RelativeLayout>

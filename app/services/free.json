@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "61130629648",
+    "firebase_url": "https://megamixplayer-5b45e.firebaseio.com",
+    "project_id": "megamixplayer-5b45e",
+    "storage_bucket": "megamixplayer-5b45e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61130629648:android:73a42004bc8aa1dd",
+        "android_client_info": {
+          "package_name": "com.merseyside.admin.exoplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61130629648-2cnv7uvmlideadu9hbuep0ummte44flo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merseyside.admin.exoplayer",
+            "certificate_hash": "b79bd12b85e9cf11561adef2a1432b6780a760da"
+          }
+        },
+        {
+          "client_id": "61130629648-4shkfnmou2glb0eo9rkulr2bq6e2ee4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merseyside.admin.exoplayer",
+            "certificate_hash": "4d3211044afa86a67b6a7d864cf043ad6d7ee91d"
+          }
+        },
+        {
+          "client_id": "61130629648-mhub1h4aphsqdevfi9ojv34anpvqh09r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCbPcMMY-jiAtxkLdxCqb2Zp93jpOAtuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61130629648-mhub1h4aphsqdevfi9ojv34anpvqh09r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61130629648:android:f6a9fd383f1d2b49",
+        "android_client_info": {
+          "package_name": "com.merseyside.admin.exoplayer.pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61130629648-ji1adoeetmhv82ve6nfos49uran1hum0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.merseyside.admin.exoplayer.pro",
+            "certificate_hash": "4d3211044afa86a67b6a7d864cf043ad6d7ee91d"
+          }
+        },
+        {
+          "client_id": "61130629648-mhub1h4aphsqdevfi9ojv34anpvqh09r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCbPcMMY-jiAtxkLdxCqb2Zp93jpOAtuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61130629648-mhub1h4aphsqdevfi9ojv34anpvqh09r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekbar="http://schemas.android.com/apk/lib/com.merseyside.admin.player.Utilities">
+    <ListPreference
+        android:entries="@array/themes_entries"
+        android:entryValues="@array/themes_entry_values"
+        android:key="theme"
+        android:summary="@string/summary_themes"
+        android:title="@string/title_themes"
+        android:defaultValue="Blue">
+    </ListPreference>
+
+    <CheckBoxPreference
+        android:key="animation"
+        android:summary="@string/summary_animation"
+        android:title="@string/title_animation"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <ListPreference
+        android:entries="@array/slider_animation_entries"
+        android:entryValues="@array/slider_animation_entry_values"
+        android:key="slideranimation"
+        android:summary="@string/summary_slider_animation"
+        android:title="@string/title_slider_animation"
+        android:defaultValue="Default">
+    </ListPreference>
+
+    <com.merseyside.admin.player.Utilities.SeekBarPreference
+        android:key="sliderbuffer"
+        android:title="@string/title_slider_buffer"
+        android:summary="@string/summary_slider_buffer"
+        android:persistent="true"
+        android:defaultValue="4"
+        seekbar:minValue="0"
+        seekbar:maxValue="7">
+    </com.merseyside.admin.player.Utilities.SeekBarPreference>
+
+    <ListPreference
+        android:entries="@array/font_entries"
+        android:entryValues="@array/font_entry_values"
+        android:key="font"
+        android:summary="@string/summary_font"
+        android:title="@string/title_font"
+        android:defaultValue="fonts/citrica.ttf">
+    </ListPreference>
+
+    <com.merseyside.admin.player.Utilities.SeekBarPreference
+        android:key="row_count"
+        android:title="@string/title_row_count"
+        android:summary="@string/summary_row_count"
+        android:persistent="true"
+        android:defaultValue="3"
+        seekbar:minValue="2"
+        seekbar:maxValue="4">
+    </com.merseyside.admin.player.Utilities.SeekBarPreference>
+
+    <ListPreference
+        android:entries="@array/languages_entries"
+        android:entryValues="@array/languages_entry_values"
+        android:key="language"
+        android:summary="@string/summary_language"
+        android:title="@string/title_language"
+        android:defaultValue="en">
+    </ListPreference>
+</PreferenceScreen>

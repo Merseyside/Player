@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_memory"
+            android:icon="@drawable/nav_memory"
+            android:title="@string/memory" />
+        <item
+            android:id="@+id/nav_playlist"
+            android:icon="@drawable/nav_playlist"
+            android:title="@string/playlist" />
+        <item
+            android:id="@+id/nav_stream"
+            android:icon="@drawable/nav_stream"
+            android:title="@string/stream" />
+
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/nav_library"
+            android:title="@string/action_library" />
+
+        <item
+            android:id="@+id/nav_lastfm"
+            android:icon="@drawable/nav_lastfm"
+            android:title="@string/lastfm" />
+
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/nav_settings"
+            android:title="@string/action_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_megamix"
+            android:title="@string/action_about" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/nav_exit"
+            android:title="@string/action_exit"/>
+    </group>
+
+</menu>

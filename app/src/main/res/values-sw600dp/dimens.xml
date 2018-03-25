@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_size">70dp</dimen>
+    <dimen name="checkbox_horizontal_margin"> 24dp </dimen>
+    <dimen name="buttons_margin_vertical"> 16dp</dimen>
+    <dimen name="buttons_margin_horizontal"> 16dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="very_small_margin">6dp</dimen>
+    <dimen name="tiny_margin">3dp</dimen>
+    <dimen name="equalizer_horizontal_margin">30dp</dimen>
+    <dimen name="large_margin">48dp</dimen>
+    <dimen name="header_size">180dp</dimen>
+    <dimen name="normal_icon_size">40dp</dimen>
+    <dimen name="medium_icon_size">64dp</dimen>
+    <dimen name="nav_buttons_margin">60dp</dimen>
+    <dimen name="cover_size">80dp</dimen>
+    <dimen name="dialog_width_size">415dp</dimen>
+    <dimen name="dialog_cell_width_size">135dp</dimen>
+    <dimen name="dialog_cell_height_size">90dp</dimen>
+    <dimen name="drag_image_size">30dp</dimen>
+    <dimen name="file_view_image">75dp</dimen>
+    <dimen name="preset_view_size">75dp</dimen>
+    <dimen name="file_choose_header_size">60dp</dimen>
+    <dimen name="circle_image_size">135dp</dimen>
+    <dimen name="player_play_button_size">120dp</dimen>
+    <dimen name="player_second_buttons_size">65dp</dimen>
+    <dimen name="player_third_buttons_size">60dp</dimen>
+    <dimen name="volume_circle_size">190dp</dimen>
+    <dimen name="grid_height">300dp</dimen>
+    <dimen name="grid_image_size">250dp</dimen>
+    <dimen name="list_height">150dp</dimen>
+    <dimen name="list_image_size">135dp</dimen>
+    <dimen name="lastfm_fab_margin">56dp</dimen>
+    <dimen name="nav_bar_margin">8dp</dimen>
+    <dimen name="player_size">120dp</dimen>
+    <dimen name="tracks_listview_height">55dp</dimen>
+
+
+    <dimen name="text_size">21sp</dimen>
+    <dimen name="text_size_medium">24sp</dimen>
+    <dimen name="text_size_very_large">48sp</dimen>
+    <dimen name="text_size_large">32sp</dimen>
+    <dimen name="title_text_size">30sp</dimen>
+    <dimen name="custom_font_size">72sp</dimen>
+    <dimen name="small_custom_font_size">56sp</dimen>
+    <dimen name="list_font_size">56sp</dimen>
+    <dimen name="grid_font_size">4sp</dimen>
+    <dimen name="widget_text_size">14sp</dimen>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/tracks_listview_height"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/theme_dependent_item_background"
+    android:padding="@dimen/tiny_margin"
+    android:layout_marginBottom="@dimen/tiny_margin">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/drag_image"
+        android:layout_marginLeft="@dimen/buttons_margin_horizontal"
+        android:layout_marginRight="@dimen/buttons_margin_horizontal"
+        android:maxHeight="@dimen/drag_image_size"
+        android:maxWidth="@dimen/drag_image_size"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:src="@drawable/drag_list"
+        android:tint="?attr/theme_dependent_tint_color"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="@dimen/tracks_listview_height"
+        android:layout_height="match_parent"
+        android:id="@+id/cover_image"
+        android:layout_toRightOf="@+id/drag_image"
+        android:layout_toEndOf="@+id/drag_image"
+        android:maxHeight="@dimen/tracks_listview_height"
+        android:maxWidth="@dimen/tracks_listview_height"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true" />
+
+    <TextView android:text="@+id/Playlist_songName"
+        android:id="@+id/Playlist_songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/cover_image"
+        android:layout_toEndOf="@id/cover_image"
+        android:textSize="@dimen/text_size"
+        android:layout_above="@+id/Playlist_artist">
+    </TextView>
+    <TextView android:text="@+id/Playlist_artist"
+        android:id="@+id/Playlist_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_toLeftOf="@+id/Playlist_Megamix"
+        android:layout_toStartOf="@+id/Playlist_Megamix"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="normal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/cover_image"
+        android:layout_toEndOf="@+id/cover_image"
+        android:textSize="@dimen/text_size">
+
+    </TextView>
+    <TextView android:text="@+id/Playlist_Duration"
+        android:id="@+id/Playlist_Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/Playlist_artist"
+        android:layout_toRightOf="@+id/cover_image"
+        android:layout_toEndOf="@+id/cover_image"
+        android:maxLines="1"
+        android:textSize="@dimen/text_size"
+        android:textColor="?attr/theme_dependent_accent_color">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Playlist_Megamix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:maxLines="1"
+        android:layout_toLeftOf="@+id/Playlist_Duration"
+        android:layout_toStartOf="@+id/Playlist_Duration"
+        android:textSize="@dimen/text_size_medium">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/grid_height"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/opacity_grey"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/playlistTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="@dimen/grid_font_size"
+        android:layout_below="@+id/playlistCover"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/playlistCover"
+        android:layout_width="@dimen/grid_image_size"
+        android:layout_height="@dimen/grid_image_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="?attr/theme_dependent_folder_icon">
+    </ImageView>
+
+</RelativeLayout>

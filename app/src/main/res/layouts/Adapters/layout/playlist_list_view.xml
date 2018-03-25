@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_height"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/opacity_grey">
+
+        <ImageView
+            android:id="@+id/playlistCover"
+            android:layout_width="@dimen/list_image_size"
+            android:layout_height="@dimen/list_image_size"
+            android:layout_centerVertical="true"
+            android:src="?attr/theme_dependent_folder_icon"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginStart="@dimen/small_margin">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/playlistTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/list_font_size"
+            android:layout_toRightOf="@+id/playlistCover"
+            android:layout_toEndOf="@+id/playlistCover"
+            android:layout_marginTop="@dimen/very_small_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit ="marquee_forever"
+            android:scrollHorizontally="true">
+        </TextView>
+
+    </RelativeLayout>

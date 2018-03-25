@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekbar="http://schemas.android.com/apk/lib/com.merseyside.admin.player.Utilities">
+
+    <CheckBoxPreference
+        android:key="continue_after_call"
+        android:summary="@string/summary_continue_after_call"
+        android:title="@string/title_continue_after_call"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="metadata"
+        android:summary="@string/summary_metadata"
+        android:title="@string/title_metadata"
+        android:defaultValue="true">
+    </CheckBoxPreference>
+
+    <com.merseyside.admin.player.Utilities.SeekBarPreference
+        android:key="recently_added"
+        android:title="@string/title_recently_added"
+        android:summary="@string/summary_recently_added"
+        android:persistent="true"
+        android:defaultValue="7"
+        seekbar:minValue="1"
+        seekbar:maxValue="14">
+    </com.merseyside.admin.player.Utilities.SeekBarPreference>
+
+    <CheckBoxPreference
+        android:key="write_log"
+        android:summary="@string/write_log_summary"
+        android:title="@string/write_log_title"
+        android:defaultValue="false">
+    </CheckBoxPreference>
+
+
+</PreferenceScreen>

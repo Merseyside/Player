@@ -1,0 +1,486 @@
+<resources>
+    <string name="app_name">Megamix Player</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_library">Library</string>
+    <string name="playlist">Playlists</string>
+    <string name="stream">Streams</string>
+    <string name="memory">Folders</string>
+    <string name="add">Add</string>
+    <string name="playlist_name">Enter playlist name</string>
+    <string name="path_to_playlist_textview">Choose playlist if it already exist</string>
+    <string name="unknown_playlist" translatable="false"> </string>
+    <string name="delete">Delete</string>
+    <string name="add_to_order">In order</string>
+    <string name="info">Info</string>
+    <string name="info_artist">Artist</string>
+    <string name="info_title">Title</string>
+    <string name="info_bitrate">Bitrate</string>
+    <string name="info_album">Album</string>
+    <string name="info_duration">Duration</string>
+    <string name="info_path">Path</string>
+    <string name= "hintName"> Enter name</string>
+    <string name= "hintUrl" translatable="false"> http://www.yourstation.com</string>
+    <string name="find_in_memory">Find in memory</string>
+    <string name="tracks">"Tracks "</string>
+    <string name="no_folders">Add your folders by pressing + button</string>
+    <string name="no_playlists">Add your playlists by pressing + button</string>
+    <string name="no_streams">Add your streams by pressing + button</string>
+    <string name="no_tracks">Add your tracks by pressing + button</string>
+    <string name="save">Save</string>
+    <string name="save_original">Save origin.</string>
+    <string name="foreign_playlist"> You can add foreign .M3U playlist by pressing + button</string>
+    <string name="url_not_matches">Link must be started with "http(s)://" and contains address and domain</string>
+    <string name="wrong_path">Can\'t play this track: wrong path</string>
+    <string name="end_of_playlist">End of playlist</string>
+    <string name="playlist_not_set">Choose playlist or folder</string>
+    <string name="settings_interface">Interface</string>
+    <string name="settings_sound">Sound</string>
+    <string name="add_name">Name</string>
+    <string name="add_url">URL</string>
+    <string name="summary_silence">Player skips silence in the end of track</string>
+    <string name="title_silence">Skip silence</string>
+    <string name="title_crossfade">Length of Crossfade</string>
+    <string name="summary_crossfade">Sets the next track playback position in the end of current track</string>
+    <string name="summary_audiofocus">Audiofocus turn off/on sound when another application is going to play some sound</string>
+    <string name="title_audiofocus">Turn Audiofocus on/off</string>
+    <string name="total_duration">Total duration: </string>
+    <string name="summary_fading">Make fading with crossfade </string>
+    <string name="title_fading">Crossfade fading </string>
+    <string name="dialog_delete">Delete </string>
+    <string name="dialog_inOrder">Play next</string>
+    <string name="dialog_info">Info</string>
+    <string name="dialog_edit">Edit</string>
+    <string name="dialog_play">Play</string>
+    <string name="successfully_added">Successfully added</string>
+    <string name="successfully_removed">Successfully removed</string>
+    <string name="dialog_add_to_playlist">Add to PL</string>
+    <string name="choose_playlist">Choose playlist</string>
+    <string name="playlists_not_found">Playlists not found. Add your playlist and try again</string>
+    <string name="info_genre">Genre</string>
+    <string name="info_location">Location</string>
+    <string name="track_info">Track info</string>
+    <string name="find">Find</string>
+    <string name="playlist_is_empty">Playlist is empty</string>
+    <string name="folder_is_empty">Folder is empty</string>
+    <string name="all_tracks">All tracks</string>
+    <string name="please_wait">Please wait&#8230; </string>
+    <string name="applying_changes">Applying changes may take a few minutes.</string>
+    <string name="tracks_not_displaying">Some tracks are not displayed because they have incorrect information. Please check your playlist.</string>
+    <string name="title_slider_buffer">Slider buffer</string>
+    <string name="summary_slider_buffer">Select how many slides should be stored in buffer</string>
+    <string name="title_slider_animation">Slider animation</string>
+    <string name="summary_slider_animation">Choose animation for slider</string>
+    <string name="name_empty">Name can not be empty</string>
+    <string name="db15" translatable="false">15db</string>
+    <string name="minus_db15">-15db</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="coming_soon">Coming soon&#8230;</string>
+    <string name="bass">Bass</string>
+    <string name="preset">Preset</string>
+    <string name="reset">Reset</string>
+    <string name="enable">Enable</string>
+    <string name="choose_preset">Choose preset</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="volume">Volume</string>
+    <string name="rated">Highly rated</string>
+    <string name="add_foreign_playlist">Add foreign PL</string>
+    <string name="add_playlist">Add playlist</string>
+    <string name="title_themes">Themes</string>
+    <string name="summary_themes">Choose theme</string>
+    <string name="share">Share</string>
+    <string name="action_exit">Exit</string>
+    <string name="name_and_artist">Only name + artist</string>
+    <string name="audio_file">Only audio file</string>
+    <string name="name_and_file">Name + artist and audio file</string>
+    <string name="send_with">Send with&#8230;</string>
+    <string name="shared_by">Shared by Megamix Player</string>
+    <string name="settings_other">Other</string>
+    <string name="title_language">Language</string>
+    <string name="summary_language">Choose language</string>
+    <string name="parent_directory">Parent directory</string>
+    <string name="crossfade">Crossfade</string>
+    <string name="fading_works">Fading (With crossfade)</string>
+    <string name="save_to">Save to PL</string>
+    <string name="megamix" translatable="false">Megamix</string>
+    <string name="permission_denied">Please save your playlist in your phone memory in case you want to change it</string>
+    <string name="megamix_track">Megamix track</string>
+    <string name="skip">Skip</string>
+    <string name="not_available">Not available here</string>
+    <string name="more">More</string>
+    <string name="successfully_saved">Successfully saved</string>
+    <string name="no_more_tracks">No more tracks</string>
+    <string name="megamix_tracks">Megamix tracks</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="increase">Increase</string>
+    <string name="title_pause_headset">Pause when disconnected</string>
+    <string name="summary_pause_headset">Player will pause playing track in case headset/bluetooth disconnected</string>
+    <string name="summary_start_headset">Start play when headset connected to phone(>=5.0 version)</string>
+    <string name="title_start_headset">Play when plugged</string>
+    <string name="summary_start_bluetooth">Start play when bluetooth device connected</string>
+    <string name="title_start_bluetooth">Play when connected</string>
+    <string name="summary_process_pressing">Turn on/off manage player by buttons on headset/etc.</string>
+    <string name="title_process_pressing">Process pressing</string>
+    <string name="headset_and_bluetooth">Headset/Bluetooth</string>
+    <string name="summary_continue_after_call">Continue playing after phone call ended</string>
+    <string name="title_continue_after_call">Continue after call</string>
+    <string name="alert_title_success">Success</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_yes_button">Yes, please!</string>
+    <string name="alert_no_button">No, thanks.</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="start_marker" translatable="false">Start marker</string>
+    <string name="end_marker" translatable="false">End marker</string>
+    <string name="rewind" translatable="false">Rewind</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="ffwd" translatable="false">Fast forward</string>
+    <string name="zoom_in" translatable="false">Zoom In</string>
+    <string name="zoom_out" translatable="false">Zoom Out</string>
+    <string name="save_button">Save</string>
+    <string name="time_seconds">seconds</string>
+    <string name="read_error">Error reading file</string>
+    <string name="bad_extension_error" translatable="false">Sorry, Ringdroid is not yet able to edit files of type</string>
+    <string name="no_extension_error" translatable="false">Sorry, Ringdroid can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="only_memory_tracks">Creator works with memory tracks only</string>
+    <string name="track_not_changed">Track does not changed</string>
+    <string name="total_duration_not_match">Total duration cannot be less 10 seconds</string>
+    <string name="share_main">"Look, this is a new player with features, lying not in your. https://play.google.com/store/apps/details?id=com.merseyside.admin.exoplayer"</string>
+    <string name="choose_crossfade">Choose crossfade duration</string>
+    <string name="crossfade_does_not_match">Crossfade value must be inside selected area</string>
+    <string name="choose_fading">Choose fading duration</string>
+    <string name="fading_does_not_match">Fading value must be less or equals crossfade duration</string>
+    <string name="choose_increase">Choose volume increase duration</string>
+    <string name="increase_does_not_match">Increase value must be inside selected area</string>
+    <string name="choose_transition_duration">Choose transition duration</string>
+    <string name="transition_duration_does_not_match">Duration value must be inside selected area</string>
+    <string name="summary_exit_time">Choose exit time</string>
+    <string name="title_exit_time">Exit time</string>
+    <string name="comment_dialog">Comment</string>
+    <string name="add_comment">Add comment</string>
+    <string name="comment_hint">Write your comment</string>
+    <string name="commented_tracks">Commented tracks</string>
+    <string name="prev_track_loaded">Previous track loaded</string>
+    <string name="forward_track_loaded">Forward track loaded</string>
+    <string name="list_view">Show as list</string>
+    <string name="grid_view">Show grid</string>
+    <string name="sort_descending">Sort descending</string>
+    <string name="sort_ascending">Sort ascending</string>
+    <string name="megamix_will_start">Megamix will start next track</string>
+    <string name="title_megamix_duration">Megamix duration</string>
+    <string name="summary_megamix_duration">Choose megamix duration</string>
+    <string name="action_about">About</string>
+    <string name="changelog" translatable="false">ChangeLog v0.8</string>
+    <string name="no_license">Application do not licensed. Trial days left: </string>
+    <string name="about_author">About author</string>
+    <string name="kryptex">Useful: Kryptex</string>
+    <string name="yes_license">Application licensed</string>
+    <string name="author_info">2016&#8211;2017 Ivan Sablin</string>
+    <string name="trial_over">Trial over</string>
+    <string name="welcome_greeting">Welcome my friend!</string>
+    <string name="not_correct_playlist_name">Not correct playlist name</string>
+    <string name="refresh">Refresh folders</string>
+    <string name="recently_added">Recently added</string>
+    <string name="load_prev_track_title">Load prev track(Megamix)</string>
+    <string name="load_prev_track_summary">Automatically loading prev track in Megamix creator(Turn it off if your memory hardware is low)</string>
+    <string name="load_next_track_title">Load next track(Megamix)</string>
+    <string name="load_next_track_summary">Automatically loading next track in Megamix creator(Turn it off if your memory hardware is low)</string>
+    <string name="do_not_show_again">Do not show again</string>
+    <string name="warning">Warning</string>
+    <string name="lastfm" translatable="false">Last.fm</string>
+    <string name="log_in">Log in Last.fm</string>
+    <string name="log_out">Log out</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="authorization_in_progress">Authorization in progress</string>
+    <string name="receiving_information">Receiving the information</string>
+    <string name="choose_option">Choose option</string>
+    <string name="recent_tracks">Recent tracks</string>
+    <string name="check_connection">Error. Check internet connection</string>
+    <string name="next_page">Next</string>
+    <string name="prev_page">Previous</string>
+    <string name="first_page">This is the first page</string>
+    <string name="last_page">This is the last page</string>
+    <string name="lastfm_recent_tracks">Recent tracks</string>
+    <string name="lastfm_loved_tracks">Loved tracks</string>
+    <string name="lastfm_top_tracks">Top tracks</string>
+    <string name="lastfm_weekly_track_chart">Weekly track chart</string>
+    <string name="lastfm_weekly_artist_chart">Weekly artist chart</string>
+    <string name="lastfm_top_artist">Top artists</string>
+    <string name="sign_in">Sign in</string>
+    <string name="playcount">Play count:</string>
+    <string name="title_wifi">Wi-Fi</string>
+    <string name="find_similar">Find similar</string>
+    <string name="love">Love</string>
+    <string name="artists_tracks">Art. tracks</string>
+    <string name="summary_wifi">Download last.fm covers only with wi-fi connection</string>
+    <string name="title_start_category_lastfm">Start category Last.fm</string>
+    <string name="summary_start_category_lastfm">This category shows initially in Last.fm</string>
+    <string name="title_scrobble_lastfm">Scrobble Last.fm</string>
+    <string name="summary_scrobble_lastfm">Scrobble tracks you listen in Megamix player</string>
+    <string name="title_now_playing_lastfm">Now playing track</string>
+    <string name="summary_now_playing_lastfm">Show on Last.fm currently playing track</string>
+    <string name="successfully_liked">Successfully liked on Last.fm</string>
+    <string name="error_love">Log in or check internet connection</string>
+    <string name="refresh_page">Refresh page</string>
+    <string name="date_added">Date added</string>
+    <string name="title_recently_added">Recently added</string>
+    <string name="summary_recently_added">How much days keep track in Recently added</string>
+    <string name="playlist_error">Playlist with similar name already exists</string>
+    <string name="megamix_memory_only">Megamix editor works with memory tracks only</string>
+    <string name="cant_write">You can\'t add the track in playlist on SDCard</string>
+    <string name="refresh_folder">Refresh</string>
+    <string name="summary_metadata">Get name and artist from track\'s metadata</string>
+    <string name="title_metadata">Metadata</string>
+    <string name="title_animation">Transition animation</string>
+    <string name="added">Added</string>
+    <string name="tracks_file">tracks</string>
+    <string name="artist_tracks">Artists tracks</string>
+    <string name="similar_tracks">Similar tracks</string>
+    <string name="item">item</string>
+    <string name="items">items</string>
+    <string name="byte1"> byte</string>
+    <string name="tip">Tip</string>
+    <string name="information">Info</string>
+    <string name="add_playlist_dialog_information">To add a m3u playlist, select it from the file manager.</string>
+    <string name="add_folders_dialog_information">To add your own music folders, hold down the folder, and the manager will go to multichoose mode. Select the other folders, and click the check mark at the top. Note that when you select folders tracks don\'t shows.</string>
+    <string name="megamix_not_valid">Megamix track is not valid</string>
+    <string name="megamix_please_wait">Loading&#8230; Please wait</string>
+    <string name="summary_animation">Transition between application\'s fragments with animation</string>
+    <string name="write_log_summary">Log can help to developer find and fix any errors</string>
+    <string name="write_log_title">Write log</string>
+    <string name="title_font">Font</string>
+    <string name="summary_font">Select the font that will appear in the category and folder name</string>
+    <string name="rate_player">Rate Megamix Player</string>
+    <string name="youtube_channel">YouTube channel</string>
+    <string name="enable_dragging">Enable dragging</string>
+    <string name="disable_dragging">Disable dragging</string>
+    <string name="title_row_count">Number of tracks per line</string>
+    <string name="summary_row_count">Choose how many tracks contains in one row in grid view</string>
+    <string name="tag" translatable="false">tag</string>
+    <string name="playback_speed">Playback speed</string>
+    <string name="nav_soundcloud">SoundCloud(soon)</string>
+    <string name="soundcloud_title">SoundCloud coming soon&#8230;</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="customer_greeting">Thank you so much for buying the player. You can now use the application without any restrictions. Good luck to your megamixes</string>
+    <string name="current_dir">Current Dir:</string>
+    <string name="pirate_title">Oh, no!</string>
+    <string name="google_play" translatable="false">Google Play</string>
+    <string name="megamix_transition_title">Megamix transition</string>
+    <string name="megamix_transition_summary">Choose transition effect (Megamix)</string>
+    <string name="choose_folders">Choose folders</string>
+    <string name="choose_tracks">Choose tracks</string>
+    <string name="choose_transition">Choose transition</string>
+    <string name="megamix_info_title">Help</string>
+    <string name="new_version">New version</string>
+    <string name="new_version_information">New version already available on Google Play!</string>
+    <string name="sleep_timer">Sleep timer</string>
+    <string name="timer_already_running">Timer is already running</string>
+    <string name="start_timer">Start timer on</string>
+    <string name="minutes">minutes</string>
+    <string name="stop_timer">Stop timer</string>
+    <string name="megamix_info_information">C - Crossfade\n Use this option for a smoothly transition between two tracks.\n\n F - Fading (With Crossfade only)\nSelect the changing track to complete over.\n\n I - Increase volume\nSelect how long the next track will become fully audible.\n\nT - Transition\nSelect a transition from one track to another and its duration.</string>
+    <string name="pirate_info">This is the pirate version of my player! Do not recommend to use it and download pirate applications. It can contain viruses. This is not good! But you still can visit Google Play page and install original application;)</string>
+    <string name="soundcloud">The SoundCloud service is already in development. Listen to the tracks online from one of the largest music collections, keep tracks in the cache, and create your playlists. A big update is coming up.</string>
+    <string name="megamix_warning">Megamix creator is a memory leak action. So if you got any problems(lags or prev/next tracks do not load correct) please turn off some options in Settings->Other. Also not recommended to use a non-compressible format such as FLAC\nGood luck;)</string>
+    <string name="trial_over_info">Free trial version is over. Hope you enjoy it. You can download full version on Google Play!</string>
+    <string name="log_v0.1">v0.1\n - Added All screens dimensions\n - Added grid view of folders in memory\n - Icons updated\n - Bugs fixed</string>
+    <string name="log_v0.2">v0.2\n - Added change log\n - Added greeting message when you first start\n - Streams was added in "Streams directory\n - Bugs fixed\n - Now application autodetect system language and setup it"</string>
+    <string name="log_v0.3">v0.3\n - Added Last.fm service. Now you can scrobble your tracks on Last.fm, look for similar tracks, love, search for artist\'s tracks etc.\n - Now in Megamix Creator show crossfade duration of the previous track and volume increase of the next track\n- Bugs fixed</string>
+    <string name="log_v0.4">v0.4\n - The application icon has been changed\n - Added .ogg and .m4p audio format extensions.\n - Notification interface has been changed \n - Added 4 new beautiful themes\n - Last.fm avatar has been added. When you press it your profile will be opened on Last.fm \n- Completely changed the design of the file manager\n - Bugs fixed</string>
+    <string name="log_v0.5">v0.5\n - Tablet support added \n - Player interface has been changed. \n - Bugs fixed</string>
+    <string name="log_v0.6">v0.6\n - Added track covers in folders and playlists \n - Added grid view of tracks in folders, playlists and library \n - Modified animation transitions \n - Redesigned buttons equalizer \n - Add the playback speed function \n - Slightly changed notification view \n - Added new features in the "About" section \n - Optimized to load the tracks in folders playlists and library \n - Checkboxes style has been changed\n - Fixed bugs</string>
+    <string name="log_v0.7">v0.7\n - A slightly modified interface \n - Added ad banners \n - Fixed bugs</string>
+    <string name="log_v0.8">v0.8\n - Added transition effects\n - Added splash screen\n - Added multichoose button in file manager\n - Now settings fragments are black\n - Checkboxes in the File Manager are now visible on a dark background\n - Application optimized\n - Increased length of megamix tracks\n - Changed the length of crossfade in Settings and in Megamix Editor\n - Added link to author page\n - The entire advertisement has been removed\n- Added menu item SoundCloud\n - Rate dialog added.\n - Bugs fixed</string>
+    <string name="greeting">Thank you for using my player!\nHope you enjoy it! Remember it is full trial version for 30 days.
+        If you like it download full version on Google Play;)</string>
+    <string name="rate_us">I hope you enjoyed my app. I look forward to your ratings and feedback on Google Play.\nPlease rate my app if you like it;)</string>
+    <string name="rate">Rate Player</string>
+
+
+    <string name="license_passed">PRO version\nAuthentication passed</string>
+    <string name="license_not_passed">PRO version\nAuthentication not passed</string>
+    <string name="check_license">Check license</string>
+    <string name="buy_license">Buy PRO version</string>
+    <string name="checking_license">Checking license&#8230;</string>
+    <string name="dont_allow">License does not confirmed</string>
+    <string name="allow">License confirmed</string>
+    <string name="application_error">Application error: %1$s</string>
+
+
+    <string name="ads_key" translatable="false">ca-app-pub-2074462823823829/9062732197</string>
+    <string name="pro_key" translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoeJqxzXGnqpEfeFiORWrSm6RmAvWFQcJNZBdiqZ99CPK0j3VV4gy7I6J8QsMYhvfnGOd01IQvrbGdJEHESJ/6/7SpV+44po4zvTiu5I2pJpl25YaCbEwLCabu4Zz6rUaN+PjCxx68PzNi2UhHdKgN0GLQ0zrh4ZPsFiGd1KiFc2dZ6ncqj/dW2GD2OH0ZSgeja0DAyUBZpTqSde8vKWmdCnjxDNA71fzRt79Fm+gjI1LTNebnvJl9uZ80jyn00c4jYGVTFa+qL195VZ47O3dz8IgrsuQQL2g5Oz/V2PePiLNgSuQeL5nJVjKwy0tDo7W7D9sQlyz+/GmtlnXUvZZDQIDAQAB</string>
+    <string name="free_key" translatable="false">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoFKO0dWZTVKMHSw8e+ScyYan7/5yo7rTT4rxPDGnkSk8b6rGHpNc7TxbBXO1Qh+k0hGDC1a04NtRvXkw2ilyEFFx9qK9Kb44bK74BXUH5bKUTZppwfCrsGyYkZFvi3yOT3WalJiY4Vk3Sqv+wUll+Rdgs50IVvXC8PEOSminQsWK6i7yJHTiRlhJsdUxngVWkZ8qvd22f10fYa7CPqH0RcvVWCyuaq08jsbEYlLcnIfeLjwZ0xDuTNujpsD5oUJ27pAZOZw1laCxSwW3DjtECAFXq4gSVPSNqvsCc0lldzgBOYT7pEef/32OLqRltnkL50t+exv9prikvxWQXmJVXwIDAQAB</string>
+    <!-- Unlicensed dialog messages -->
+    <string name="unlicensed_dialog_title">Application not licensed</string>
+    <string name="unlicensed_dialog_body">This application is not licensed. Please purchase it from Android Market.</string>
+    <string name="unlicensed_dialog_retry_body">Unable to validate license. Check to see if a network connection is available.</string>
+    <string name="buy_button">Buy app</string>
+    <string name="retry_button">Retry</string>
+    <string name="quit_button">Exit</string>
+    <string name="free">Trial</string>
+
+    <string-array name="slider_animation_entries">
+        <item>Default</item>
+        <item>Random</item>
+        <item>Accordion</item>
+        <item>Background2Foreground</item>
+        <item>Cube In</item>
+        <item>DepthPage</item>
+        <item>Flip Horizontal</item>
+        <item>Flip Page</item>
+        <item>Foreground2Background</item>
+        <item>Rotate Down</item>
+        <item>Rotate Up</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>Zoom Out Slide</item>
+        <item>Zoom Out</item>
+    </string-array>
+
+
+    <string-array name="themes_entries">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Teal</item>
+        <item>Green</item>
+    </string-array>
+
+    <string-array name="languages_entries">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="megamix_transition_entries">
+        <item>No transition</item>
+        <item>Raiser 1</item>
+        <item>Raiser 2</item>
+        <item>Raiser 3</item>
+        <item>Raiser 4</item>
+        <item>Raiser 5</item>
+        <item>Raiser 6</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="megamix_duration_entries">
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+    </string-array>
+
+    <string-array name="lastfm_options">
+        <item>Recent tracks</item>
+        <item>Loved tracks</item>
+        <item>Top tracks</item>
+        <item>Weekly track chart</item>
+        <item>Weekly artist chart</item>
+        <item>Top artists</item>
+    </string-array>
+
+    <string-array name="font_entries">
+        <item>Citrica</item>
+        <item>Default</item>
+        <item>Flomastica</item>
+        <item>Evolventa</item>
+        <item>Lays</item>
+    </string-array>
+
+    <string-array name="tips">
+        <item>If you know that your phone doesn\'t have a good processor and RAM, it\'s better to disable the previous track\'s load in the editor. You can do this in the settings in the "Other" section</item>
+        <item>The white wave shows the crossfade of the previous track and the volume increase of the following. Use this to create a better transition effect</item>
+        <item>Crossfade is a function to create a smooth transition between tracks.</item>
+        <item>Fading is a function that can smoothly reduce the volume of the changed track.</item>
+        <item>Volume Increase is a function that allows a smoother volume of the next track.</item>
+        <item>The duration of crossfade and fading depends on the selected region. Often long crossfade is applied when there is no clear interruption of the sound of the track. In any case, it remains at your discretion.</item>
+        <item>Increase volume should be used only with crossfade of the previous track.</item>
+        <item>Volume increase and crossfade, preferably, should be equal in length.</item>
+        <item>Mix compositions must be the same genre, or at least similar.</item>
+        <item>Notice that the editor loads the previous and next track (if the appropriate check marks are set in the settings) for convenient and efficient operation.</item>
+        <item>To go to previous or to the next track, click the arrows on the left and right of the selected time values in the wave.</item>
+        <item>if the previous/next track is not loaded correctly (produces only 5.94 seconds), it means that the memory is full. Turn off the appropriate settings.</item>
+        <item>To save the track you are changing, click Save. If you save in the playlist, the track you are editing will remain unchanged, and the playlist you selected is added.</item>
+        <item>To remove Megamix changes, click "Save original"</item>
+        <item>The editor supports scaling the wave for more accurate changes.</item>
+        <item>Transition effects between the two tracks is best used without lengthy crossfade, fade and increasing volume.</item>
+    </string-array>
+
+    <string-array name="slider_animation_entry_values">
+        <item>Default</item>
+        <item>Random</item>
+        <item>Accordion</item>
+        <item>Background2Foreground</item>
+        <item>CubeIn</item>
+        <item>DepthPage</item>
+        <item>FlipHorizontal</item>
+        <item>FlipPage</item>
+        <item>Foreground2Background</item>
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>ZoomOutSlide</item>
+        <item>ZoomOut</item>
+    </string-array>
+
+    <string-array name="megamix_duration_entry_values">
+        <item>0.5f</item>
+        <item>0.6f</item>
+        <item>0.7f</item>
+        <item>0.8f</item>
+        <item>0.9f</item>
+    </string-array>
+
+    <string-array name="lastfm_options_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="languages_entry_values">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
+    <string-array name="themes_entry_values">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Teal</item>
+        <item>Green</item>
+    </string-array>
+
+    <string-array name="megamix_transition_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="font_entry_values">
+        <item>fonts/citrica.ttf</item>
+        <item>default</item>
+        <item>fonts/flomastica.ttf</item>
+        <item>fonts/evolventa.ttf</item>
+        <item>fonts/lays.ttf</item>
+    </string-array>
+
+</resources>

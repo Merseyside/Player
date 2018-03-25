@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/theme_dependent_dialog_color">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/choose_transition"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tiny_margin"
+            android:background="?attr/theme_dependent_accent_color"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/transition_list"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@null">
+
+        </ListView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/transition_cancel"
+        android:text="@string/cancel"
+        android:textSize="@dimen/text_size"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_background_selector"
+        android:layout_below="@+id/layout"/>
+
+</RelativeLayout>

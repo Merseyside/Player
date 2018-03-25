@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Megamix Player</string>
+    <string name="playlist_not_set">Выберите плейлист или папку</string>
+    <string name="action_exit">Выйти</string>
+    <string name="action_library">Библиотека</string>
+    <string name="action_settings">Настройки</string>
+    <string name="add">Добавить</string>
+    <string name="add_foreign_playlist">Добавить Ваш плейл.</string>
+    <string name="add_name">Название</string>
+    <string name="add_playlist">Добавить плейлист</string>
+    <string name="add_to_order">В очередь</string>
+    <string name="all_tracks">Все треки</string>
+    <string name="add_url">Добавьте URL</string>
+    <string name="applying_changes">Изменения могут занять какое-то время.</string>
+    <string name="audio_file">Только аудио файл</string>
+    <string name="bass">Басс</string>
+    <string name="choose_playlist">Выберите плейлист</string>
+    <string name="choose_preset">Выберите пресет</string>
+    <string name="coming_soon">Будет позже&#8230;</string>
+    <string name="delete">Удалить</string>
+    <string name="dialog_add_to_playlist">В плейл.</string>
+    <string name="dialog_delete">Удалить</string>
+    <string name="dialog_edit">Изменить</string>
+    <string name="dialog_inOrder">Игр. след.</string>
+    <string name="dialog_info">Инфо</string>
+    <string name="dialog_play">Пуск</string>
+    <string name="enable">Доступно</string>
+    <string name="end_of_playlist">Конец плейлиста</string>
+    <string name="equalizer">Эквалайзер</string>
+    <string name="find">Поиск</string>
+    <string name="find_in_memory">Поиск в памяти</string>
+    <string name="folder_is_empty">Папка пуста</string>
+    <string name="foreign_playlist">Вы можете добавить сторонний плейлист нажав на +</string>
+    <string name="hintName">Введите название</string>
+    <string name="info">Инфо</string>
+    <string name="info_album">Альбом</string>
+    <string name="info_artist">Исполнитель</string>
+    <string name="info_bitrate">Битрейт</string>
+    <string name="info_duration">Время</string>
+    <string name="info_genre">Жанр</string>
+    <string name="info_location">Местоположение</string>
+    <string name="info_path">Путь</string>
+    <string name="info_title">Название</string>
+    <string name="loading">Загрузка&#8230;</string>
+    <string name="memory">Папки</string>
+    <string name="minus_db15">-db15</string>
+    <string name="name_and_artist">Название и исполнитель</string>
+    <string name="name_and_file">Название и аудио файл</string>
+    <string name="name_empty">Название не может быть пустым</string>
+    <string name="no_folders">Добавьте свои папки нажав на +</string>
+    <string name="no_playlists">Добавьте плейлист нажав на +</string>
+    <string name="no_streams">Добавьте станцию нажав на +</string>
+    <string name="no_tracks">Добавьте треки нажав на +</string>
+    <string name="path_to_playlist_textview">Выберите плейлист если он уже существует</string>
+    <string name="playlist">Плейлисты</string>
+    <string name="playlist_is_empty">Плейлист пуст</string>
+    <string name="playlist_name">Введите название плейлиста</string>
+    <string name="playlists_not_found">Плейлисты не найдены. Добавьте плейлист и повторите снова</string>
+    <string name="please_wait">Пожалуйста, подождите&#8230;</string>
+    <string name="preset">Пресет</string>
+    <string name="rated">Высоко оцененные</string>
+    <string name="reset">Сброс</string>
+    <string name="save">Сохранить</string>
+    <string name="send_with">Отправить с помощью&#8230;</string>
+    <string name="settings_interface">Интерфейс</string>
+    <string name="settings_sound">Звук</string>
+    <string name="share">Поделиться</string>
+    <string name="shared_by">Отправлено с помощью Megamix Player</string>
+    <string name="stream">Станции</string>
+    <string name="successfully_added">Добавлено успешно</string>
+    <string name="successfully_removed">Успешно удалено</string>
+    <string name="summary_audiofocus">Аудиофокус включает/выключает звук когда другое приложение собирается проигрывать свою музыку</string>
+    <string name="summary_crossfade">Устанавливает время до конца трека, когда начнет проигрываться следующий трек</string>
+    <string name="summary_fading">Затухание при кроссфейде</string>
+    <string name="summary_silence">Плеер будет пропускать тишину в конце трека</string>
+    <string name="summary_slider_animation">Выберите анимацию для слайдера обложек</string>
+    <string name="summary_slider_buffer">Выберите сколько обложек будет загружаться заранее</string>
+    <string name="summary_themes">Выберите тему</string>
+    <string name="title_audiofocus">Включить/выключить аудиофокус</string>
+    <string name="title_crossfade">Длина кроссфейда</string>
+    <string name="title_fading">Затухание</string>
+    <string name="title_silence">Тишина</string>
+    <string name="title_slider_animation">Анимация слайдера</string>
+    <string name="title_slider_buffer">Буффер слайдера</string>
+    <string name="title_themes">Темы</string>
+    <string name="total_duration">Продолжительность:</string>
+    <string name="track_info">Инфо</string>
+    <string name="tracks">Треки</string>
+    <string name="tracks_not_displaying">Некоторые треки не видны, так как имеют неправильную информацию.</string>
+    <string name="url_not_matches">Ссылка должна начинаться с \"http(s):\", содержать адресс и домен.</string>
+    <string name="volume">Громкость</string>
+    <string name="wrong_path">Невозможно проиграть трек: неправильный путь.</string>
+    <string name="settings_other">Разное</string>
+    <string name="summary_language">Выберите язык</string>
+    <string name="title_language">Язык</string>
+    <string name="megamix_info_information">C - Кроссфейд\n Используйте кроссфейд для плавного перехода между двумя треками.\n\nF - Затухание (Только с кроссфейдом)\nУстанавливает за какой промежуток времени сменяемый трек станет полностью неслышим.\n\nI - Нарастание громкости\nОпределяет через какой промежуток времени следующий трек станет полностью слышим\n\nT - Эффект перехода\nРазличные звуки перехода для перехода  между двумя треками.</string>
+    <string name="fading_works">Затухание(с кросс.)</string>
+
+    <string-array name="slider_animation_entries">
+        <item>Default</item>
+        <item>Random</item>
+        <item>Accordion</item>
+        <item>Background2Foreground</item>
+        <item>Cube In</item>
+        <item>DepthPage</item>
+        <item>Flip Horizontal</item>
+        <item>Flip Page</item>
+        <item>Foreground2Background</item>
+        <item>Rotate Down</item>
+        <item>Rotate Up</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>Zoom Out Slide</item>
+        <item>Zoom Out</item>
+    </string-array>
+
+    <string-array name="themes_entries">
+        <item>Синяя</item>
+        <item>Красная</item>
+        <item>Оранжевая</item>
+        <item>Фиолетовая</item>
+        <item>Бирюзовая</item>
+        <item>Зеленая</item>
+    </string-array>
+
+    <string-array name="megamix_duration_entries">
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+    </string-array>
+
+    <string-array name="lastfm_options">
+        <item>Недавние треки</item>
+        <item>Любимые треки</item>
+        <item>Топ треки</item>
+        <item>Недельный трек-чарт</item>
+        <item>Недельный артист-чарт</item>
+        <item>Топ артистов</item>
+    </string-array>
+
+    <string-array name="languages_entries">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="font_entries">
+        <item>Citrica</item>
+        <item>Default</item>
+        <item>Flomastica</item>
+        <item>Evolventa</item>
+        <item>Lays</item>
+    </string-array>
+
+    <string-array name="megamix_transition_entries">
+        <item>Без перехода</item>
+        <item>Нарастающий 1</item>
+        <item>Нарастающий 2</item>
+        <item>Нарастающий 3</item>
+        <item>Нарастающий 4</item>
+        <item>Нарастающий 5</item>
+        <item>Нарастающий 6</item>
+        <item>Случайный</item>
+    </string-array>
+
+    <string-array name="tips">
+        <item>Если вы знаете, что ваш телефон не обладает хорошим процессором и оперативной памятью, лучше отключить подгрузку предыдущего трека в редакторе. Сделать это можно в настройках в разделе "Разное"</item>
+        <item>На волне белым цветом показывается кроссфейд предыдущего трека и нарастание громкости следуюшего. Используйте это для создание лучшего эффекта при переходах</item>
+        <item>Кроссфейд - функция, служащая для создания плавного перехода между треками.</item>
+        <item>Затухание - функция, позволяющая плавно уменьшать громкость сменяемого трека.</item>
+        <item>Нарастание громкости - функция, позволяющая плавно увеличивать громкость следующего трека.</item>
+        <item>Продолжительность кроссфейда и затухания зависит от выбранной области. Зачастую длинный кроссфейд применяется тогда, когда нет четкого прерывания звучания трека. В любом случае это остается на ваше усмотрение.</item>
+        <item>Нарастание громкости следует применять только с кроссфейдом предыдущего трека.</item>
+        <item>Нарастание громкости и кроссфейд, желательно, должны быть равны по продолжительности.</item>
+        <item>Миксуемые композиции должны быть одного жанра или, хотя бы, похожи.</item>
+        <item>Обратите внимание, что редактор загружает предыдущий и следующий треки(если в настройках установлены соответствующие галочки) для удобной и эффективной работы.</item>
+        <item>Чтобы перейти к предыдущему или следующему трекам нужно нажать на стрелки слева и справа от выбранных временных значений на волне.</item>
+        <item>Если предыдущий/следующий трек загрузился некорректно(например только 5.94 секунды), то это означает, что заполнена оперативная память. Отключите соответствующие настройки.</item>
+        <item>Чтобы сохранить изменяемый трек, нажмите "Сохранить". При сохранении в плейлист изменяемый трек останется без изменений, а в выбранный плейлист будет добавлен измененный.</item>
+        <item>Чтобы убрать мегамикс изменения, нажмите на кнопку \"Сохранить оригинал\"</item>
+        <item>Редактор поддерживает масштабирование волны для более точных изменений.</item>
+        <item>Эффекты перехода между двумя треки лучше всего использовать без продолжительного кроссфейда, затухания и нарастания громкости.</item>
+    </string-array>
+
+
+    <string name="parent_directory">Родительская папка</string>
+    <string name="alert_no_button">Нет, спасибо</string>
+    <string name="alert_title_failure">Ошибка</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_title_success">Успешно</string>
+    <string name="alert_yes_button">Да, пожалуйста</string>
+    <string name="cancel">Отмена</string>
+    <string name="crossfade">Кроссфейд</string>
+    <string name="headset_and_bluetooth">Гарнитура/Bluetooth</string>
+    <string name="increase">Нарастание громк.</string>
+    <string name="megamix_track">Megamix трек</string>
+    <string name="megamix_tracks">Megamix треки</string>
+    <string name="more">Еще</string>
+    <string name="no_more_tracks">Больше треков нет</string>
+    <string name="not_available">Не поддерживается</string>
+    <string name="ok">OK</string>
+    <string name="only_memory_tracks">Редактор работает только с треками в памяти телефона</string>
+    <string name="play">Старт</string>
+    <string name="play_error">Нельзя проиграть этот файл</string>
+    <string name="progress_dialog_loading">Загрузка&#8230;</string>
+    <string name="read_error">Ошибка чтения файла</string>
+    <string name="save_button">Сохранить</string>
+    <string name="save_to">Сохр. в ПЛ</string>
+    <string name="skip">Пропуст.</string>
+    <string name="stop">Стоп</string>
+    <string name="successfully_saved">Успешно сохранено</string>
+    <string name="summary_continue_after_call">Продолжить воспроизведение после окончания телефонного разговора</string>
+    <string name="summary_pause_headset">Плеер приостановит воспроизвение трека в случае отключения гарнитуры/bluetooth</string>
+    <string name="summary_process_pressing">Включить/выключить управление плеером кнопками на гарнитуре</string>
+    <string name="summary_start_bluetooth">"Продолжить воспроизведение при подключении bluetooth гарнитуры "</string>
+    <string name="summary_start_headset">Продолжить воспроизведение когда проводная гарнитура подключается к телефону (версия >=5.0)</string>
+    <string name="time_seconds">секунды</string>
+    <string name="title_continue_after_call">Продолжить после разговора</string>
+    <string name="title_pause_headset">Пауза при дисконнекте</string>
+    <string name="title_process_pressing">Обработка нажатий</string>
+    <string name="title_start_bluetooth">Продолжить при подключении</string>
+    <string name="title_start_headset">Продолжить при включении</string>
+    <string name="total_duration_not_match">Суммарная продолжительность не может быть меньше 15 секунд</string>
+    <string name="track_not_changed">Трек не был изменен</string>
+    <string name="share_main">Гляди, новый музыкальный плеер с функциями, которых нет в твоем:) https://play.google.com/store/apps/details?id=com.merseyside.admin.exoplayer</string>
+    <string name="choose_crossfade">Выберите продолжительность кроссфейда</string>
+    <string name="choose_fading">Выберите продолжительность затухания</string>
+    <string name="choose_increase">Выберите продолжительность нарастания громк.</string>
+    <string name="crossfade_does_not_match">Значение кроссфейда должно быть внутри выбранной области</string>
+    <string name="fading_does_not_match">Значение затухания должно быть меньше или равным продолжительности кроссфейда</string>
+    <string name="increase_does_not_match">Значение нарастания громкости должно быть внутри выбранного диапозона</string>
+    <string name="summary_exit_time">Выберите время выхода из приложения при бездействии. Выход очищает оперативную память телефона</string>
+    <string name="title_exit_time">Время выхода из приложения</string>
+    <string name="add_comment">Добавить коммент.</string>
+    <string name="comment_hint">Напишите свой коммент.</string>
+    <string name="comment_dialog">Коммент.</string>
+    <string name="commented_tracks">Треки с комментариями</string>
+    <string name="forward_track_loaded">След. трек загружен</string>
+    <string name="grid_view">Показать плитками</string>
+    <string name="list_view">Показать в списке</string>
+    <string name="megamix_will_start">Мегамикс запустится после этого трека</string>
+    <string name="prev_track_loaded">Пред. трек загружен</string>
+    <string name="sort_ascending">Отсортировать по возраст.</string>
+    <string name="sort_descending">Отсортировать по убыв.</string>
+    <string name="summary_megamix_duration">Выберите длину мегамикса</string>
+    <string name="title_megamix_duration">Длина мегамикса</string>
+    <string name="about_author">Об авторе</string>
+    <string name="action_about">О приложении</string>
+    <string name="author_info">2016&#8211;2017 Иван Саблин</string>
+    <string name="greeting">"Спасибо за использование моего плеера. Надеюсь Вам понравится. Помните,  что это бесплатная полная пробная версия на 30 день. Если Вам понравится приложение, вы всегда можете скачать полную версию на Google Play;) "</string>
+    <string name="log_v0.1">v0.1\n - Добавлены размеры для всех экранов\n - Добавлены плитки папок в памяти\n - Обновлены иконки\n - Исправлены баги</string>
+    <string name="log_v0.2">"v0.2\n - Добавлен список изменения версий\n - Добавлено приветственное сообщение при первом запуске приложения\n - Добавлены стримы во вкладке Станции\n - Теперь приложение само определяет язык системы и устанавливает его\n - Исправлены баги "</string>
+    <string name="no_license">"Не лицензионное приложение. Осталось дней: "</string>
+    <string name="trial_over">Пробный период истек</string>
+    <string name="trial_over_info">Бесплатный пробный период истек. Надеюсь вам понравилось пользоваться приложением:) Вы можете загрузить полную версию на Google Play!</string>
+    <string name="yes_license">Приложение лицензировано</string>
+    <string name="welcome_greeting">Привет, друг!</string>
+    <string name="thank_you">Спасибо!</string>
+    <string name="customer_greeting">Большое спасибо за приобретение плеера. Теперь вы можете использовать приложение без каких-либо ограничений. Удачных Вам мегамиксов;)</string>
+    <string name="not_correct_playlist_name">Неправильное название плейлиста</string>
+    <string name="recently_added">Недавно добавленные</string>
+    <string name="refresh">Обновить папки</string>
+    <string name="do_not_show_again">Больше не показывать</string>
+    <string name="load_next_track_summary">Автоматически подгружать следующий трек в Megamix редакторе(отключите если у вашего телефона маленькая оперативная память)</string>
+    <string name="load_next_track_title">Подгружать следующий трек(Megamix)</string>
+    <string name="load_prev_track_summary">Автоматически подгружать предыдущий трек в Megamix редакторе(отключите если у вашего телефона маленькая оперативная память)</string>
+    <string name="load_prev_track_title">Подгружать предыдущий трек(Megamix)</string>
+    <string name="megamix_warning">Работа в Megamix редакторе занимает много оперативной памяти. Поэтому если у вас возникли проблемы(лаги или предыдущий/следующий треки загружаются некоректно) то уберите соответствующие пункты в Настройки->Разное. Так же не рекомендуется использовать не сжатые форматы, такие как FLAC.\nУдачи;)</string>
+    <string name="warning">Внимание</string>
+    <string name="authorization_in_progress">Идет авторизация&#8230;</string>
+    <string name="check_connection">Ошибка. Проверьте интернет соединение</string>
+    <string name="choose_option">Выберите категорию</string>
+    <string name="first_page">Это первая страница</string>
+    <string name="last_page">Это последняя страница</string>
+    <string name="lastfm_loved_tracks">Любимые треки</string>
+    <string name="lastfm_recent_tracks">Недавние треки</string>
+    <string name="lastfm_top_tracks">Топ треки</string>
+    <string name="lastfm_weekly_track_chart">Недельный трек-чарт</string>
+    <string name="lastfm_weekly_artist_chart">Недельный артист-чарт</string>
+    <string name="lastfm_top_artist">Топ артистов</string>
+    <string name="log_in">Войти в Last.fm</string>
+    <string name="log_out">Выйти</string>
+    <string name="log_v0.3">v0.3\n - Добавлен сервис Last.fm. Теперь вы можете скроблить свои треки на Last.fm, искать похожие треки, лайкать, искать треки исполнителя и т.д\n - Теперь в Megamix редакторе показывается продолжительность кроссфейда предыдущего трека и нарастание громкости следующего\n - Исправлены баги</string>
+    <string name="next_page">Следующая</string>
+    <string name="password_hint">Пароль</string>
+    <string name="prev_page">Предыдущая</string>
+    <string name="receiving_information">Получение информации&#8230;</string>
+    <string name="recent_tracks">Недавние треки</string>
+    <string name="remember_me">Запомнить меня</string>
+    <string name="username_hint">Никнейм</string>
+    <string name="sign_in">Регистрация</string>
+    <string name="playcount">Прослушиваний:</string>
+    <string name="summary_wifi">Загрузка обложек last.fm будет производиться только с подключением к Wi-Fi</string>
+    <string name="title_wifi">Wi-Fi</string>
+    <string name="artists_tracks">Треки арт.</string>
+    <string name="error_love">Войдите в Last.fm или проверьте соединение</string>
+    <string name="find_similar">Иск. похож.</string>
+    <string name="love">Лайкнуть</string>
+    <string name="successfully_liked">Успешно добавлено в любимые на Last.fm</string>
+    <string name="summary_now_playing_lastfm">Показывать на Last.fm проигрываемый трек</string>
+    <string name="summary_scrobble_lastfm">Скроблить прослушиваемые треки на Last.fm</string>
+    <string name="summary_start_category_lastfm">"Данная категория будет показана при входе в Last.fm "</string>
+    <string name="title_now_playing_lastfm">Прослушиваемый трек</string>
+    <string name="title_scrobble_lastfm">Скроблить трек на Last.fm</string>
+    <string name="title_start_category_lastfm">Начальная категория Last.fm</string>
+    <string name="log_v0.4">v0.4\n - Изменена иконка приложения\n - Добавлена возможность проигрывать аудио файлы с расширением .ogg и .m4p.\n - Изменен интерфейс уведомления \n - Добавлена аватарка вашего Last.fm профиля. При нажатии на него будет открыт ваш профиль на Last.fm\nДобавлены 4 новые красивые темы.\n - Полностью изменен дизайн файлового менеджера\n- Исправлены баги</string>
+    <string name="refresh_page">Обновить страницу</string>
+    <string name="date_added">Дата добавления</string>
+    <string name="summary_recently_added">Сколько дней хранить трек в Недавно добавленных</string>
+    <string name="title_recently_added">Недавно добавленные</string>
+    <string name="playlist_error">Плейлист с таким название уже есть</string>
+    <string name="cant_write">Вы не можете добавить трек в плейлист на карте памяти</string>
+    <string name="megamix_memory_only">Megamix редактор работает только с треками в памяти устройства</string>
+    <string name="refresh_folder">Обновить</string>
+    <string name="summary_metadata">Брать название трека и артиста из метадаты композиции</string>
+    <string name="title_metadata">Метадата</string>
+    <string name="save_original">Сохр. ориг.</string>
+    <string name="added">Добавлено</string>
+    <string name="tracks_file">треков</string>
+    <string name="artist_tracks">Треки артиста</string>
+    <string name="similar_tracks">Похожие треки</string>
+    <string name="summary_animation">Переход между окнами приложения с анимацией</string>
+    <string name="title_animation">Анимация</string>
+    <string name="item">" объект"</string>
+    <string name="items">" объектов"</string>
+    <string name="byte1">" байт"</string>
+    <string name="megamix_please_wait">Загружается&#8230; Пожалуйста, подождите</string>
+    <string name="megamix_not_valid">Мегамикс трек не соответствует требованиям</string>
+    <string name="tip">Совет</string>
+    <string name="write_log_summary">Логи помогают разработчику найти и исправить ошибки</string>
+    <string name="write_log_title">Писать лог</string>
+    <string name="nav_soundcloud">SoundCloud(разр.)</string>
+    <string name="soundcloud_title">SoundCloud в разработке&#8230;</string>
+    <string name="soundcloud">Сервис SoundCloud уже в разработке. Прослушивайте треки онлайн из одной из самых больших музыкальных коллекций, сохраняйте треки в КЕШ, создавайте свои плейлисты. Большое обновление уже скоро.</string>
+    <string name="current_dir">Текущая папка:</string>
+
+    <string-array name="slider_animation_entry_values">
+        <item>Default</item>
+        <item>Random</item>
+        <item>Accordion</item>
+        <item>Background2Foreground</item>
+        <item>CubeIn</item>
+        <item>DepthPage</item>
+        <item>FlipHorizontal</item>
+        <item>FlipPage</item>
+        <item>Foreground2Background</item>
+        <item>RotateDown</item>
+        <item>RotateUp</item>
+        <item>Stack</item>
+        <item>Tablet</item>
+        <item>ZoomIn</item>
+        <item>ZoomOutSlide</item>
+        <item>ZoomOut</item>
+    </string-array>
+
+    <string-array name="megamix_duration_entry_values">
+        <item>0.5f</item>
+        <item>0.6f</item>
+        <item>0.7f</item>
+        <item>0.8f</item>
+        <item>0.9f</item>
+    </string-array>
+
+    <string-array name="lastfm_options_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="languages_entry_values">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
+    <string-array name="megamix_transition_entry_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="themes_entry_values">
+        <item>Blue</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Purple</item>
+        <item>Teal</item>
+        <item>Green</item>
+    </string-array>
+    <string name="permission_denied">Пожалуйста, сохраните плейлист в память телефона если хотите его изменить</string>
+    <string name="information">Инфо</string>
+    <string name="add_folders_dialog_information">Чтобы добавить свои папки с музыкой, нажмите на папку и удерживайте. Менеджер перейдет в режим мультивыбора. Выберите все необходимые папки и нажмите на галочку в правом верхнем углу. Учтите, что при выборе папок, треки не показываются.</string>
+    <string name="add_playlist_dialog_information">Чтобы добавить свой .m3u плейлист, нажмите на него в файловом менеджере.</string>
+    <string name="summary_font">Выберите шрифт для названий категорий и папок</string>
+    <string name="title_font">Шрифт</string>
+
+    <string-array name="font_entry_values">
+        <item>fonts/citrica.ttf</item>
+        <item>default</item>
+        <item>fonts/flomastica.ttf</item>
+        <item>fonts/evolventa.ttf</item>
+        <item>fonts/lays.ttf</item>
+    </string-array>
+    <string name="log_v0.5">v0.5 \n - Добавлена поддержка планшетов \n - Изменен пользовательский интерфейс \n - Исправлены баги</string>
+    <string name="allow">Лицензия подтверждена</string>
+    <string name="application_error">Ошибка приложения</string>
+    <string name="buy_button">Купить</string>
+    <string name="buy_license">Купить PRO версию</string>
+    <string name="check_license">Проверить лицензию</string>
+    <string name="checking_license">Лицензия проверяется&#8230;</string>
+    <string name="dont_allow">Проверка лицензии не пройдена</string>
+    <string name="license_not_passed">Проверка PRO версии не пройдена</string>
+    <string name="license_passed">Проверка лицензии пройдена</string>
+    <string name="quit_button">Выйти</string>
+    <string name="rate_player">Оценить Megamix Player</string>
+    <string name="retry_button">Повторить</string>
+    <string name="unlicensed_dialog_body">Приложение не лицензировано. Пожалуйста, приобретите его на маркете</string>
+    <string name="unlicensed_dialog_retry_body">Невозможно проверить лицензию. Проверьте подключение к интернету</string>
+    <string name="unlicensed_dialog_title">Приложение не лицензировано</string>
+    <string name="youtube_channel">YouTube канал</string>
+    <string name="log_v0.6">v0.6\n - Добавлены обложки треков в папках и плейлистах \n - Добавлено плиточное представление треков в папках, плейлистах и библиотеке \n - Изменена анимация переходов\n - Видоизменены кнопки эквалайзера \n - В эквалайзере добавлена функция изменения скорости воспроизведения \n - Незначительно изменен вид уведомлений \n - Добавлены новые функции в разделе "О приложении" \n - Оптимизирована загрузка треков в папках, плейлистах и библиотеке \n - Изменен вид чекбоксов \n - Исправлены баги</string>
+    <string name="disable_dragging">Выкл. перемещение</string>
+    <string name="enable_dragging">Вкл. перемещение</string>
+    <string name="playback_speed">Скорость воспроизведения</string>
+    <string name="summary_row_count">Выберите сколько треков будет содержать одна строка в плиточном представлении</string>
+    <string name="title_row_count">Количество треков в строке</string>
+    <string name="log_v0.7">v0.7\n - Незначительно изменен интерфейс\n - Добавлены рекламные баннеры\n - Исправлены баги</string>
+    <string name="rate_us">Надеюсь, вам понравилось мое приложение. С нетерпением жду ваших оценок и отзывов на Google Play.\nПожалуйста, поставьте оценку моему приложению если оно вам понравилось;)</string>
+    <string name="rate">Оцените плеер</string>
+    <string name="pirate_info">Это пиратская версия моего плеера! Не рекомендую впредь скачивать пиратские приложения просто потому что это нехорошо и может содержать вирусы. Но Вы все еще можете посетить маркет и установить оригинальное приложение;)</string>
+    <string name="pirate_title">О, нет!</string>
+    <string name="choose_folders">Выберите папки</string>
+    <string name="choose_tracks">Выберите треки</string>
+    <string name="choose_transition">Выберите переход</string>
+    <string name="choose_transition_duration">Выберите продолжительность перехода</string>
+    <string name="megamix_info_title">Справка</string>
+    <string name="megamix_transition_summary">Выберите звук для перехода(Megamix)</string>
+    <string name="megamix_transition_title">Мегамикс переход</string>
+    <string name="transition_duration_does_not_match">Значение должно быть в пределах выбранной области</string>
+    <string name="free">Пробный</string>
+    <string name="kryptex">Полезное: Kryptex</string>
+    <string name="log_v0.8">v0.8\n - Добавлены эффекты перехода между треками\n - Добавлен стартовый экран\n - Добавлена кнопка мультивыбора в файловом менеджере\n - Теперь настройки черного цвета\n - Теперь чекбоксы в файловом менеджере видны на темном фоне\n - Приложение оптимизировано\n - Увеличена продолжительность мегамикс треков\n - Увеличена продолжительность кроссфейда в настройках и Мегамикс редакторе\n - Добавлена ссылка на страницу автора\n - Удалены все рекламные баннеры\n - Добавлен пункт меню SoundCloud\n - Добавлен диалог оценки приложения\n - Исправлены баги.</string>
+    <string name="new_version">Новая версия</string>
+    <string name="new_version_information">Новая версия уже доступна на Google Play!</string>
+    <string name="minutes">минуты</string>
+    <string name="sleep_timer">Таймер сна</string>
+    <string name="start_timer">Запустить таймер на</string>
+    <string name="stop_timer">Остановить</string>
+    <string name="timer_already_running">Таймер уже запущен</string>
+
+</resources>
