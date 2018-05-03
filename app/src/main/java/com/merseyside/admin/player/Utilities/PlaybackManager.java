@@ -46,6 +46,8 @@ import java.util.TimerTask;
 
 public class PlaybackManager extends Service  {
 
+    private final String TAG = "PlaybackManager";
+
     public class SleepTimerTask extends TimerTask{
 
         @Override
@@ -377,6 +379,12 @@ public class PlaybackManager extends Service  {
         return flag;
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy()");
+    }
+
     public void initBroadcast(){
         audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
         phoneListener = new MyPhoneStateListener();
@@ -454,8 +462,6 @@ public class PlaybackManager extends Service  {
             headsetFilter.addAction(AudioManager.ACTION_HEADSET_PLUG);
         }
         headsetFilter.addAction(BluetoothA2dp.ACTION_CONNECTION_STATE_CHANGED);
-        /*headsetFilter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECT_REQUESTED);
-        headsetFilter.addAction(BluetoothDevice.ACTION_ACL_DISCONNECTED);*/
 
         getApplicationContext().registerReceiver(control_reciever, headsetFilter);
 
@@ -654,10 +660,8 @@ public class PlaybackManager extends Service  {
         return 0;
     }
 
-    public boolean isNowPlaying(){
-        if (!isPlaying) return false;
-        if (currentPlayer.exist()) return currentPlayer.isPlaying();
-        return false;
+    public boolean isNowPlaying() {
+        return isPlaying && currentPlayer.exist() && currentPlayer.isPlaying();
     }
 
     public void seekTo(int pos){
@@ -846,7 +850,7 @@ public class PlaybackManager extends Service  {
             case ServiceConstants.ACTION.CALLING_END:
                 PrintString.printLog("Intent", action);
                 isAvailableToPlay = true;
-                if (isPlaying && Settings.CONTINUE_AFTER_CALL && isWaitingToContinue){
+                if (isNowPlaying() && Settings.CONTINUE_AFTER_CALL && isWaitingToContinue){
                     isWaitingToContinue = false;
                     new Thread(new Runnable() {
                         @Override
