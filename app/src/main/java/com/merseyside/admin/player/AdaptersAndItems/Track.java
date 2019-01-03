@@ -216,9 +216,7 @@ public class Track implements Comparable, Cloneable, Parcelable {
             retriver.setDataSource(getPath());
             byte[] data = retriver.getEmbeddedPicture();
             bmp = BitmapFactory.decodeByteArray(data, 0,data.length);
-        }catch(NullPointerException e){
-            return Settings.track;
-        }catch (IllegalArgumentException e){
+        } catch (RuntimeException e) {
             return Settings.track;
         }catch (OutOfMemoryError e){
             return null;

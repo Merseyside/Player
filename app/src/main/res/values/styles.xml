@@ -312,6 +312,7 @@
         <item name="theme_dependent_notification">@layout/notification_teal</item>
         <item name="theme_dependent_item_background">@drawable/background_item_teal_selector</item>
         <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_teal</item>
+
     </style>
 
     <style name="CheckBoxStyle_Teal" parent="@android:style/Widget.CompoundButton.CheckBox">

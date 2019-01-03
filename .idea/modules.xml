@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\ExoPlayer.iml" filepath="D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\ExoPlayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/LicenseVerificationLibrary/LicenseVerificationLibrary.iml" filepath="$PROJECT_DIR$/LicenseVerificationLibrary/LicenseVerificationLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Player.iml" filepath="$PROJECT_DIR$/Player.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\extension-flac\extension-flac.iml" filepath="D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\extension-flac\extension-flac.iml" />
-      <module fileurl="file://D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\library\library.iml" filepath="D:\Ivan Viktorovich\Workspace\Player\ExoPlayer\library\library.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/slider/slider.iml" filepath="$PROJECT_DIR$/slider/slider.iml" />
     </modules>

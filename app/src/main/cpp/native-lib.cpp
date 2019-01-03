@@ -11,7 +11,7 @@ Java_com_merseyside_admin_player_MainActivity_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
-jint IS_DEBUG = true;
+jint IS_DEBUG = false;
 const char* rsa = "caa27274fbc890bf230e577713db40e60c6d15f88d66eedbc159d702a2c46cdbd8228a3d77395aecaaa4bdf6c59cf254f75ebe56e0ad71b768fbcd6d5d45e7c1d225e66196aab52d1c6798c8227556b2b0d54e74eae1fa5407533006f7ea888312aa7b6b75c6195ef11e88219bdcb717084e7d093805a07d8e3212f48a6667b38c86ab1387a3d0da5cf1686527505b561d5bbd5ba7a8ef8f216507209de1cc0ad5a56a2a4433b4171907b02dd29766686b872e6ef1cc154e24a8d7f726b975180e05c76a90029a88eb4381028a1a033e65426d37bb1276a1317f56f4330101d0bc3b1778a91a5d83204bf33e4d633e3894776bde7d64970d95094a928e8636fb";
 jint ERROR = -1, ACCEPTED = 1, NOT_ACCEPTED = 0;
 jint verifyCertificate(JNIEnv *env, jobject obj, jobject cnt) {

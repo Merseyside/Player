@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         settings = new Settings(MainActivity.this);
         settings.bindService(getApplicationContext());
         settings.saveLogcatToFile();
-        settings.checkFirstLaunch();
+        //settings.checkFirstLaunch();
 
         PrintString.printLog("lifeCycle", "MainActivity onCreate");
         megamixCreator = new MegamixCreator();
@@ -424,7 +424,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             mFirebaseRemoteConfig.activateFetched();
                         }
                         displayVideoDialog();
-                        checkNewVersion();
+                        //checkNewVersion();
                     }
                 });
     }

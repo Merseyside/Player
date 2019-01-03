@@ -5,5 +5,173 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="MainActivity_Dark_Blue" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark_Blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_Blue</item>
+        <item name="colorAccent">@color/colorAccent_Dark_Blue</item>
+        <item name="editTextStyle">@style/EditText_Dark_Blue</item>
+        <item name="buttonStyle">@style/Button_Dark_Blue</item>
+        <item name="android:textViewStyle">@style/TextView_Dark_Blue</item>
+        <item name="android:colorBackground">@color/windowBackground_Dark_Blue</item>
+        <item name="theme_dependent_color">@color/colorPrimaryDark_Blue</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_blue</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Dark_Blue</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacityDark_Blue</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_dark_blue_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Dark_Blue</item>
+        <item name="theme_dependent_text_color">@color/textColor_Dark_Blue</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_dark_blue</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_blue_theme</item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_blue_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_blue</item>
+        <item name="theme_dependent_track_cover">@drawable/track_blue</item>
+        <item name="theme_dependent_notification">@layout/notification_blue</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_blue_selector</item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_blue</item>
+        <item name="android:navigationBarColor">@color/background_blue</item>
+    </style>
+
+    <style name="MainActivity_Dark_Red" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Dark_Red</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_Dark_Red</item>
+        <item name="colorAccent">@color/colorAccent_Dark_Red</item>
+        <item name="editTextStyle">@style/EditText_Dark_Red</item>
+        <item name="buttonStyle">@style/Button_Dark_Red</item>
+        <item name="android:textViewStyle">@style/TextView_Dark_Red</item>
+        <item name="android:colorBackground">@color/windowBackground_Dark_Red</item>
+        <item name="theme_dependent_color">@color/colorPrimary_Dark_Red</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_red</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Dark_Red</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacityDark_Red</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_dark_red_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Dark_Red</item>
+        <item name="theme_dependent_text_color">@color/textColor_Dark_Red</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_dark_red</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_red_theme</item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_red_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_red</item>
+        <item name="theme_dependent_track_cover">@drawable/track_red</item>
+        <item name="theme_dependent_notification">@layout/notification_red</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_red_selector</item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_red</item>
+        <item name="android:navigationBarColor">@color/background_red</item>
+    </style>
+
+    <style name="MainActivity_Dark_Orange" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Dark_Orange</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_Dark_Orange</item>
+        <item name="colorAccent">@color/colorAccent_Dark_Orange</item>
+        <item name="editTextStyle">@style/EditText_Dark_Orange</item>
+        <item name="buttonStyle">@style/Button_Dark_Orange</item>
+        <item name="android:textViewStyle">@style/TextView_Dark_Orange</item>
+        <item name="android:colorBackground">@color/windowBackground_Dark_Orange</item>
+        <item name="theme_dependent_color">@color/colorPrimary_Dark_Orange</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_orange</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Dark_Orange</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacityDark_Orange</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_dark_orange_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Dark_Orange</item>
+        <item name="theme_dependent_text_color">@color/textColor_Dark_Orange</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_dark_orange</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_orange_theme
+        </item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_orange_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_orange</item>
+        <item name="theme_dependent_track_cover">@drawable/track_orange</item>
+        <item name="theme_dependent_notification">@layout/notification_orange</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_orange_selector
+        </item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_orange</item>
+        <item name="android:navigationBarColor">@color/background_orange</item>
+    </style>
+
+    <style name="MainActivity_Dark_Purple" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Dark_Purple</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_Dark_Purple</item>
+        <item name="colorAccent">@color/colorAccent_Dark_Purple</item>
+        <item name="editTextStyle">@style/EditText_Dark_Purple</item>
+        <item name="buttonStyle">@style/Button_Dark_Purple</item>
+        <item name="android:textViewStyle">@style/TextView_Dark_Purple</item>
+        <item name="android:colorBackground">@color/windowBackground_Dark_Purple</item>
+        <item name="theme_dependent_color">@color/colorPrimary_Dark_Purple</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_purple</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Dark_Purple</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacityDark_Purple</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_dark_purple_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Dark_Purple</item>
+        <item name="theme_dependent_text_color">@color/textColor_Dark_Purple</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_dark_purple</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_purple_theme
+        </item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_purple_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_purple</item>
+        <item name="theme_dependent_track_cover">@drawable/track_purple</item>
+        <item name="theme_dependent_notification">@layout/notification_purple</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_purple_selector
+        </item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_purple</item>
+        <item name="android:navigationBarColor">@color/background_purple</item>
+    </style>
+
+    <style name="MainActivity_Green" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Green</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_Green</item>
+        <item name="colorAccent">@color/colorAccent_Green</item>
+        <item name="editTextStyle">@style/EditText_Green</item>
+        <item name="buttonStyle">@style/Button_Green</item>
+        <item name="android:textViewStyle">@style/TextView_Green</item>
+        <item name="android:colorBackground">@color/windowBackground_Green</item>
+        <item name="theme_dependent_color">@color/colorPrimary_Green</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_green</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Green</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacity_Green</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_green_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Green</item>
+        <item name="theme_dependent_text_color">@color/textColor_Green</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_green</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_green_theme
+        </item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_green_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_green</item>
+        <item name="theme_dependent_track_cover">@drawable/track_green</item>
+        <item name="theme_dependent_notification">@layout/notification_green</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_green_selector</item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_green</item>
+        <item name="android:navigationBarColor">@color/background_green</item>
+    </style>
+
+    <style name="MainActivity_Teal" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary_Teal</item>
+        <item name="colorPrimaryDark">@color/colorPrimary_Teal</item>
+        <item name="colorAccent">@color/colorAccent_Teal</item>
+        <item name="editTextStyle">@style/EditText_Teal</item>
+        <item name="buttonStyle">@style/Button_Teal</item>
+        <item name="android:textViewStyle">@style/TextView_Teal</item>
+        <item name="android:colorBackground">@color/windowBackground_Teal</item>
+        <item name="theme_dependent_color">@color/colorPrimary_Teal</item>
+        <item name="theme_dependent_dialog_color">@drawable/dialog_bg_teal</item>
+        <item name="theme_dependent_accent_color">@color/colorAccent_Teal</item>
+        <item name="theme_dependent_tint_color">@color/white</item>
+        <item name="theme_dependent_order_color">@color/opacity_Teal</item>
+        <item name="theme_dependent_windowBackground">@drawable/background_teal_theme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxStyle_Teal</item>
+        <item name="theme_dependent_text_color">@color/textColor_Teal</item>
+        <item name="theme_dependent_header_gradient">@drawable/gradient_teal</item>
+        <item name="theme_dependent_equalizer_band_style">@drawable/equalizer_band_teal_theme</item>
+        <item name="theme_dependent_progress_bar_style">@drawable/progressbar_teal_theme</item>
+        <item name="theme_dependent_folder_icon">@drawable/memory_folder_teal</item>
+        <item name="theme_dependent_track_cover">@drawable/track_teal</item>
+        <item name="theme_dependent_notification">@layout/notification_teal</item>
+        <item name="theme_dependent_item_background">@drawable/background_item_teal_selector</item>
+        <item name="theme_dependent_playlist_cover">@drawable/playlists_cover_teal</item>
+        <item name="android:navigationBarColor">@color/background_teal</item>
     </style>
 </resources>
