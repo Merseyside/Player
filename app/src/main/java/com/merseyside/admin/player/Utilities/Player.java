@@ -25,11 +25,11 @@ public abstract class Player implements MediaController.MediaPlayerControl, ExoP
     protected Context context;
     protected SimpleExoPlayer player;
 
-    protected static float MAX_VOLUME;
-    protected static float SPEED;
-    protected static boolean volume_changed, speed_changed;
+    static float MAX_VOLUME;
+    private static float SPEED;
+    static boolean volume_changed, speed_changed;
     protected Player_Fragment.Type type;
-    protected TransitionPlayer transitionPlayer;
+    TransitionPlayer transitionPlayer;
 
     protected void createPlayer(){
         TrackSelector trackSelector = new DefaultTrackSelector();

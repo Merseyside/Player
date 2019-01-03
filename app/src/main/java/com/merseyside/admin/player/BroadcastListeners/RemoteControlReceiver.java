@@ -100,30 +100,6 @@ public class RemoteControlReceiver extends BroadcastReceiver {
                     }).start();
             } else if (state == BluetoothA2dp.STATE_DISCONNECTED) {}
         }
-        /*else if (BluetoothDevice.ACTION_ACL_CONNECTED.equals(action)) {
-            if (Settings.START_BLUETOOTH)
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            Thread.sleep(6000);
-                            Handler mainHandler = new Handler(context.getMainLooper());
-                            Runnable myRunnable = new Runnable() {
-                                @Override
-                                public void run() {
-                                    listener.headsetPlugged();
-                                }
-                            };
-                            mainHandler.post(myRunnable);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }).start();
-
-        }
-         else if (BluetoothDevice.ACTION_ACL_DISCONNECTED.equals(action)) {}*/
-
     }
 
     public class MyTimerTask extends TimerTask {

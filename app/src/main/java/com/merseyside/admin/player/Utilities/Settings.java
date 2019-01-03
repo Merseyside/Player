@@ -315,7 +315,7 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
         if (playbackManager != null) {
             if (!playbackManager.isNowPlaying() || stopAnyway) {
                 try {
-                    context.startService(stopIntentService);
+                    context.stopService(stopIntentService);
                     playbackManager.updateWidget(true);
                 } catch (NullPointerException ignored) {}
             }
@@ -348,7 +348,10 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
                 if (serviceListener!=null) serviceListener.onServiceDisconnected(playbackManager);
             }
         };
+
+        context.startService(startIntentService);
         context.bindService(startIntentService, sConn, Context.BIND_AUTO_CREATE);
+
     }
 
     public void saveLogcatToFile() {
@@ -751,6 +754,7 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
             day_of_year = calendar.get(Calendar.DAY_OF_YEAR);
             if (isProVersion()) {
                 if (Settings.LICENSE_CHECKED != day_of_year && Settings.LICENSE_CHECKED != -2) {
+                    fillStreams();
                     checkLicense(true, null);
                 }
             }
@@ -805,10 +809,12 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
 
     private void fillStreams(){
         FileManager manager = new FileManager(context);
-        manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record", "http://online.radiorecord.ru:8101/rr_128", "", null);
-        manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Electron", "http://radio-electron.ru:8000/128", "", null);
-        manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record Club", "http://online.radiorecord.ru:8102/club_128", "", null);
-        manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record Megamix", "http://online.radiorecord.ru:8102/mix_128", "", null);
+        if (manager.getCountOfItems(DBHelper.TABLE_STREAMS_NAME) == 0) {
+            manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record", "http://online.radiorecord.ru:8101/rr_128", "", null);
+            manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Electron", "http://radio-electron.ru:8000/128", "", null);
+            manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record Club", "http://online.radiorecord.ru:8102/club_128", "", null);
+            manager.saveStream(DBHelper.TABLE_STREAMS_NAME, "Record Megamix", "http://online.radiorecord.ru:8102/mix_128", "", null);
+        }
     }
 
     public void restart(Context context){
