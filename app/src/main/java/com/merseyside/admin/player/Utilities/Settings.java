@@ -242,7 +242,7 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
     private final static int TRIAL_DURATION = 30;
 
     private static final boolean PRO_VERSION = false;
-    public static final String CURRENT_VERSION = "0.8.5";
+    public static final String CURRENT_VERSION = "1.0";
     private static final String PRO_VERSION_PACKAGENAME = "com.merseyside.admin.exoplayer.pro";
     private static final String TRIAL_VERSION_PACKAGENAME = "com.merseyside.admin.exoplayer";
 
@@ -349,7 +349,13 @@ public class Settings implements SharedPreferences.OnSharedPreferenceChangeListe
             }
         };
 
-        context.startService(startIntentService);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(startIntentService);
+        }
+        else {
+            context.startService(startIntentService);
+        }
+
         context.bindService(startIntentService, sConn, Context.BIND_AUTO_CREATE);
 
     }

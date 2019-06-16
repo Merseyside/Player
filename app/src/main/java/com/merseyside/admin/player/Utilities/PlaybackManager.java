@@ -1,6 +1,7 @@
 package com.merseyside.admin.player.Utilities;
 
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -13,6 +14,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.media.AudioManager;
 import android.os.Binder;
 import android.os.Build;
@@ -56,7 +58,9 @@ public class PlaybackManager extends Service  {
         }
     }
 
+    private NotificationManager mNotificationManager;
     MyBinder binder = new MyBinder();
+    private  NotificationCompat.Builder notificationBuilder;
 
     public interface MyPlaybackManagerListener{
         void playPlaylist(Track track);
@@ -181,8 +185,30 @@ public class PlaybackManager extends Service  {
         return START_STICKY;
     }
 
-    private Notification getMyActivityNotification(){
+    private Notification getMyActivityNotification() {
         Notification notification;
+
+        if (mNotificationManager == null) {
+            mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        }
+
+        if (notificationBuilder == null) {
+            notificationBuilder = new NotificationCompat.Builder(this, ServiceConstants.CHANNEL.CHANNEL_ID);
+        }
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            String name = ServiceConstants.CHANNEL.VERBOSE_NOTIFICATION_CHANNEL_NAME;
+            String description = ServiceConstants.CHANNEL.VERBOSE_NOTIFICATION_CHANNEL_DESCRIPTION;
+            int importance = NotificationManager.IMPORTANCE_HIGH;
+            NotificationChannel channel = new NotificationChannel(ServiceConstants.CHANNEL.CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            channel.enableLights(true);
+            channel.setLightColor(Color.GREEN);
+
+            mNotificationManager.createNotificationChannel(channel);
+        }
+
         Intent notificationIntent = new Intent(this, MainActivity.class);
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_SINGLE_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, (int)System.currentTimeMillis(),
@@ -222,7 +248,6 @@ public class PlaybackManager extends Service  {
             if (playlist!=null)
             count = currentPosition+1+"/"+playlist.size();
             else count = "0/0";
-
         }
         else {
             icon = BitmapFactory.decodeResource(getResources(), R.drawable.internet);
@@ -246,26 +271,23 @@ public class PlaybackManager extends Service  {
         if (isNowPlaying()) remoteViews.setImageViewResource(R.id.play, R.drawable.pause);
         else remoteViews.setImageViewResource(R.id.play, R.drawable.play);
 
-        notification = new NotificationCompat.Builder(this)
+        notificationBuilder
                 .setSmallIcon(R.drawable.equalizer_icon)
                 .setContentTitle(title)
                 .setContentText(text)
                 .setTicker(getString(R.string.app_name))
+                .setOngoing(true)
                 .setContentIntent(pendingIntent)
                 .setPriority(Notification.PRIORITY_MAX)
-                .addAction(android.R.drawable.ic_media_previous, "Prev", ppreviousIntent)
-                .addAction(android.R.drawable.ic_media_play, "Play", pplayIntent)
-                .addAction(android.R.drawable.ic_media_next, "Prev", pnextIntent)
-                .build();
+                .setOnlyAlertOnce(true)
+                .setContent(remoteViews);
 
-        notification.bigContentView = remoteViews;
-        return notification;
+        return notificationBuilder.build();
     }
 
     private void updateNotification() {
-        Notification notification;
-        notification = getMyActivityNotification();
-        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        Notification notification = getMyActivityNotification();
+
         mNotificationManager.notify(ServiceConstants.NOTIFICATION_ID.FOREGROUND_SERVICE, notification);
         startForeground(ServiceConstants.NOTIFICATION_ID.FOREGROUND_SERVICE, notification);
     }
@@ -703,7 +725,7 @@ public class PlaybackManager extends Service  {
         else return null;
     }
 
-    public void setPlaylist(ArrayList<Track> playlist){
+    public void setPlaylist(ArrayList<Track> playlist) {
         this.playlist = playlist;
     }
 

@@ -24,4 +24,10 @@ public class ServiceConstants {
    public interface NOTIFICATION_ID {
         int FOREGROUND_SERVICE = 101;
     }
+
+    public interface CHANNEL {
+        String VERBOSE_NOTIFICATION_CHANNEL_NAME = "Megamix Player";
+        String VERBOSE_NOTIFICATION_CHANNEL_DESCRIPTION = "Shows notifications whenever work starts";
+        String CHANNEL_ID = "2431";
+    }
 }

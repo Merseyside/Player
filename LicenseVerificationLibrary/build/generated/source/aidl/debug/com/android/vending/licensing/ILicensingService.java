@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Ivan Viktorovich\\Workspace\\Player\\LicenseVerificationLibrary\\src\\main\\aidl\\com\\android\\vending\\licensing\\ILicensingService.aidl
+ * Original file: C:\\Users\\ivan_\\Desktop\\Ivan Viktorovich\\Workspace\\Player\\LicenseVerificationLibrary\\src\\main\\aidl\\com\\android\\vending\\licensing\\ILicensingService.aidl
  */
 package com.android.vending.licensing;
 // Android library projects do not yet support AIDL, so this has been
